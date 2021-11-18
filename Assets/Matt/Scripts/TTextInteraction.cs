@@ -13,6 +13,9 @@ public class TTextInteraction : MonoBehaviour
     [Tooltip("Rotation offset from target view.")]
     [SerializeField] Vector3 rotationAdjustment;
 
+    [SerializeField] float moveDuration = 1f;
+    [SerializeField] float rotateDuration = 1f;
+
     [Header("Callbacks")]
     [SerializeField] List<UnityEvent> onMouseDown;
     [SerializeField] List<UnityEvent> onMouseUp;
@@ -20,17 +23,15 @@ public class TTextInteraction : MonoBehaviour
     [SerializeField] List<UnityEvent> onMouseExit;
     [SerializeField] List<UnityEvent> onMouseOver;
 
-    GameObject player;
+    TPlayerController player;
     TMP_Text text;
     BoxCollider boxCollider;
-    MeshRenderer meshRenderer;
 
     // Start is called before the first frame update
     void Start()
     {
-        player = GameObject.FindGameObjectWithTag("Player");
+        player = GameObject.FindGameObjectWithTag("Player").GetComponent<TPlayerController>();
         text = GetComponent<TMP_Text>();
-        meshRenderer = GetComponent<MeshRenderer>();
         boxCollider = GetComponent<BoxCollider>();
     }
 
@@ -39,12 +40,17 @@ public class TTextInteraction : MonoBehaviour
     {
         // Update the collider to match the text bounds
         // (the extra size compared to mesh bounds feels better on slanted text)
-        boxCollider.center = text.textBounds.center;
-        boxCollider.size = text.textBounds.size;
+        //boxCollider.center = text.textBounds.center;
+        //boxCollider.size = text.textBounds.size;
 
         // Or the mesh bounds? Subtly different, mesh is tighter
-        //boxCollider.center = meshRenderer.bounds.center - transform.position;
-        //boxCollider.size = meshRenderer.bounds.size;
+        boxCollider.center = text.mesh.bounds.center;
+        boxCollider.size = text.mesh.bounds.size;
+    }
+
+    private void LateUpdate()
+    {
+        
     }
 
     // When the mouse is pressed on the collider
@@ -81,7 +87,8 @@ public class TTextInteraction : MonoBehaviour
             targetRotation += targetView.eulerAngles;
         }
         // Apply new position and rotation
-        player.transform.SetPositionAndRotation(targetPosition, Quaternion.Euler(targetRotation));
+        player.MoveTo(targetPosition, moveDuration);
+        player.RotateTo(targetRotation, rotateDuration);
     }
 
     // When the mouse enters the collider
