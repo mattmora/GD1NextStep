@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 using UnityEngine.Events;
+using DG.Tweening;
 
 public class TTextInteraction : MonoBehaviour
 {
@@ -15,6 +16,8 @@ public class TTextInteraction : MonoBehaviour
 
     [SerializeField] float moveDuration = 1f;
     [SerializeField] float rotateDuration = 1f;
+
+    [SerializeField] float textMoveDuration = 1f;
 
     [Header("Callbacks")]
     [SerializeField] List<UnityEvent> onMouseDown;
@@ -162,5 +165,10 @@ public class TTextInteraction : MonoBehaviour
         {
             e.Invoke();
         }
+    }
+
+    public void MoveTo(Transform dest)
+    {
+        transform.DOMove(dest.position, textMoveDuration);
     }
 }
