@@ -23,7 +23,12 @@ public class TTextInteraction : MonoBehaviour
     [SerializeField] List<UnityEvent> onMouseExit;
     [SerializeField] List<UnityEvent> onMouseOver;
 
+    [SerializeField] List<UnityEvent> onTimerEnd;
+
     [SerializeField] List<GameObject> linkedObjects;
+
+    [SerializeField] bool useTimer = false;
+    [SerializeField] float timerDuration;
 
     TPlayerController player;
     TMP_Text text;
@@ -37,6 +42,11 @@ public class TTextInteraction : MonoBehaviour
         player = GameObject.FindGameObjectWithTag("Player").GetComponent<TPlayerController>();
         text = GetComponent<TMP_Text>();
         boxCollider = GetComponent<BoxCollider>();
+
+        if (useTimer)
+        {
+            StartCoroutine(TimerCountdown());
+        }
     }
 
     // Update is called once per frame
@@ -133,9 +143,24 @@ public class TTextInteraction : MonoBehaviour
         gameObject.SetActive(false);
     }
 
+    public void GoToText(int linkedObjectIndex)
+    {
+        linkedObjects[linkedObjectIndex].SetActive(true);
+        gameObject.SetActive(false);
+    }
+
     public void DisableInteraction()
     {
         interactable = false;
         text.color = Color.black;
+    }
+
+    IEnumerator TimerCountdown()
+    {
+        yield return new WaitForSeconds(timerDuration);
+        foreach (var e in onTimerEnd)
+        {
+            e.Invoke();
+        }
     }
 }
