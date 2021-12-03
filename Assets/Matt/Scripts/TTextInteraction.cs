@@ -23,9 +23,13 @@ public class TTextInteraction : MonoBehaviour
     [SerializeField] List<UnityEvent> onMouseExit;
     [SerializeField] List<UnityEvent> onMouseOver;
 
+    [SerializeField] List<GameObject> linkedObjects;
+
     TPlayerController player;
     TMP_Text text;
     BoxCollider boxCollider;
+
+    public bool interactable = true;
 
     // Start is called before the first frame update
     void Start()
@@ -121,5 +125,17 @@ public class TTextInteraction : MonoBehaviour
     public void SetTextColor(Color color)
     {
         text.color = color;
+    }
+
+    public void LinkToText(string linkId, string linkText, int linkIndex)
+    {
+        linkedObjects[linkIndex].SetActive(true);
+        gameObject.SetActive(false);
+    }
+
+    public void DisableInteraction()
+    {
+        interactable = false;
+        text.color = Color.black;
     }
 }
