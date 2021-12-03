@@ -24,16 +24,10 @@ public class TTextColor : MonoBehaviour
     void Update()
     {
         string[] s = text.text.Split(new string[] { "<color" }, StringSplitOptions.None);
-        if (textColors.Count != s.Length - 1)
+        while (textColors.Count < s.Length - 1)
         {
-            textColors.Clear();
-            hoverColors.Clear();
-
-            for (int i = 1; i < s.Length; ++i)
-            {
-                textColors.Add(Color.black);
-                hoverColors.Add(Color.black);
-            }
+            textColors.Add(Color.black);
+            //hoverColors.Add(Color.black);
         }
 
         string newText = s[0];
