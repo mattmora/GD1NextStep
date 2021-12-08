@@ -142,6 +142,7 @@ public class TTextInteraction : MonoBehaviour
 
     public void LinkToText(string linkId, string linkText, int linkIndex)
     {
+        if (linkedObjects.Count <= linkIndex) return;
         linkedObjects[linkIndex].SetActive(true);
         gameObject.SetActive(false);
     }
