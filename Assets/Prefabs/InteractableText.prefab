@@ -59,12 +59,16 @@ MonoBehaviour:
   rotationAdjustment: {x: 0, y: 0, z: 0}
   moveDuration: 1
   rotateDuration: 1
+  textMoveDuration: 1
   onMouseDown: []
   onMouseUp: []
   onMouseEnter: []
   onMouseExit: []
   onMouseOver: []
+  onTimerEnd: []
   linkedObjects: []
+  useTimer: 0
+  timerDuration: 0
   interactable: 1
 --- !u!114 &207006421633658640
 MonoBehaviour:
@@ -107,7 +111,27 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Sample text
+  m_text: "[Game]  Opening. 0 - 2D     Scene 1. Dream (memory)- 2D  [Frantic footsteps/panting] 
+    ANTONIO  What\u2019s with this?   Why are they chasing me?   I didn\u2019t do
+    anything\u2026   So, why?   [Scuffle]  Wait--wait, stop!--  [Muffled shouts/fade
+    out]   Scene 2. Reality (jail) - 3D  ANTONIO  Wait!--  [Fade In/blur]  ANTONIO 
+    It was a dream\u2026?  [Turn]  But, where--?  [Turn+1]  Oh...right.  [Turn+1] 
+    It really happened.  [Turn+1]  How could they do that?  [Turn+1]  We used to
+    go to school together.  [Turn+1]  We used to play together.  [Turn+1]  Doesn\u2019t
+    that mean a thing\u2026?  [Turn+10]  [New \u201Cscene\u201D]   CELL  Welcome
+    to the beginning of the end.  Congratulations.  You have unlocked The End.  Continue
+    to proceed to your sentence.  [Turn]  Would you like to proceed?  Would you like
+    to take the next step?  Knowing it will be your last?      Scene 3. Dream 2 (nightmare)
+    - 3D ANTONIO There\u2019s no other way to do this.  [STEP]  This is my only option
+    now..  [STEP]  If not me then who ?  [STEP]  If not me then who will do it for
+    them  [PEDAL]  If not me then who will care for them  [PEDAL]  If not me then
+    who ?  [PEDAL]  He always said \u201CIf not you then who?\u201D  [PEDAL]  But
+    really WHO?!  [HOLE]   Reckless like always.... \t\t\t\t\tNever seen him \t\t\tHere
+    at rock bottom....... ALL FOR THEM.. \t.............A position of power [FALL]
+    What I wanted....... .................What I\u2019d get \t\tNavigating \t\t\t\tThe
+    tight streets \t\t\t\t\t\t\tOld Yellow Cab [FALL]  I was able to study and keep
+    my grades....... It has been two decades Sounds cool Not when you\u2019re dead........ 
+    [WAKE UP]    Scene 4. Reality 2 (letter) - 3D  Scene 5. Dream 3 (letter) - 3D"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -191,9 +215,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 97a179042eb4dc94cbf4e0dc8392ea26, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  colorPalette: []
   textColors: []
-  hoverColors: []
 --- !u!114 &4881902800949725545
 MonoBehaviour:
   m_ObjectHideFlags: 0

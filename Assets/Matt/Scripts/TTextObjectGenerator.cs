@@ -7,9 +7,10 @@ using System.Text.RegularExpressions;
 [ExecuteInEditMode]
 public class TTextObjectGenerator : MonoBehaviour
 {
+    [TextArea]
     public string textBlock;
 
-    public string[] delimiters;
+    string[] delimiters;
 
     public GameObject textPrefab;
 
@@ -18,7 +19,8 @@ public class TTextObjectGenerator : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        delimiters = new string[] { "\n" };
+        textPrefab.name = "InteractableText";
     }
 
     // Update is called once per frame
@@ -26,28 +28,35 @@ public class TTextObjectGenerator : MonoBehaviour
     {
         if (activate)
         {
-            string stippedBlock = RemoveBetween(textBlock, "[", "]");
-            string[] texts = textBlock.Split(delimiters, 1000000, System.StringSplitOptions.RemoveEmptyEntries);
+            int objNum = 1;
+            // string strippedBlock = RemoveBetween(textBlock, "[", "]");
+            string strippedBlock = textBlock;
+            string[] texts = strippedBlock.Split('\n');
             foreach (var t in texts)
             {
                 string text = t.Trim();
-                Instantiate(textPrefab);
-                textPrefab.GetComponent<TMP_Text>().text = text;
+                if (text == string.Empty) continue;
+                var go = Instantiate(textPrefab);
+                go.GetComponent<TMP_Text>().text = text;
+                go.name = objNum.ToString() + " " + text.Substring(0, text.Length > 15 ? 15 : text.Length);
+                objNum++;
             }
             activate = false;
         }
     }
 
     public static string RemoveBetween(string original, string firstTag, string secondTag)
-{
-   string pattern = firstTag + "(.*?)" + secondTag;
-   Regex regex = new Regex(pattern, RegexOptions.RightToLeft);
+    {
+        string pattern = firstTag + "(.*?)" + secondTag;
+        Regex regex = new Regex(pattern);
 
-   foreach(Match match in regex.Matches(original))
-   {
-      original = original.Replace(match.Groups[1].Value, string.Empty);
-   }
-
-   return original;
-}
+        foreach (Match match in regex.Matches(original))
+        {
+            if (match.Value != string.Empty)
+            {
+                original = original.Replace(match.Value, string.Empty);
+            }
+        }
+        return original;
+    }
 }
