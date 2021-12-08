@@ -64,7 +64,10 @@ MonoBehaviour:
   onMouseEnter: []
   onMouseExit: []
   onMouseOver: []
+  onTimerEnd: []
   linkedObjects: []
+  useTimer: 0
+  timerDuration: 0
   interactable: 1
 --- !u!114 &207006421633658640
 MonoBehaviour:
@@ -86,7 +89,19 @@ MonoBehaviour:
       m_Calls: []
   m_OnLinkClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1347645649924280511}
+        m_TargetAssemblyTypeName: TTextInteraction, Assembly-CSharp
+        m_MethodName: LinkToText
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1347645649924280510
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -191,9 +206,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 97a179042eb4dc94cbf4e0dc8392ea26, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  colorPalette: []
   textColors: []
-  hoverColors: []
 --- !u!114 &4881902800949725545
 MonoBehaviour:
   m_ObjectHideFlags: 0
