@@ -130,6 +130,7 @@ public class TTextInteraction : MonoBehaviour
 
     public void LinkToText(string linkId, string linkText, int linkIndex)
     {
+        Debug.Log("link");
         if (!interactable) return;
         // Debug.Log("Called link text");
 
@@ -141,6 +142,7 @@ public class TTextInteraction : MonoBehaviour
                 linkedObjects[linkIndex].GetComponent<TTextInteraction>().FadeIn();
             }
         }
+        
         MovePlayer();
         if (disableOnClick) 
         {
