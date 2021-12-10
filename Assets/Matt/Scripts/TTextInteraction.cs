@@ -19,12 +19,12 @@ public class TTextInteraction : MonoBehaviour
 
     [SerializeField] float textMoveDuration = 1f;
 
-    [Header("Callbacks")]
-    [SerializeField] List<UnityEvent> onMouseDown;
-    [SerializeField] List<UnityEvent> onMouseUp;
-    [SerializeField] List<UnityEvent> onMouseEnter;
-    [SerializeField] List<UnityEvent> onMouseExit;
-    [SerializeField] List<UnityEvent> onMouseOver;
+    // [Header("Callbacks")]
+    // [SerializeField] List<UnityEvent> onMouseDown;
+    // [SerializeField] List<UnityEvent> onMouseUp;
+    // [SerializeField] List<UnityEvent> onMouseEnter;
+    // [SerializeField] List<UnityEvent> onMouseExit;
+    // [SerializeField] List<UnityEvent> onMouseOver;
 
     [SerializeField] List<UnityEvent> onTimerEnd;
 
@@ -38,6 +38,9 @@ public class TTextInteraction : MonoBehaviour
     BoxCollider boxCollider;
 
     public bool interactable = true;
+
+    public bool disableOnClick = true;
+    public float disableFadeDuration = 0f;
 
     // Start is called before the first frame update
     void Start()
@@ -71,69 +74,51 @@ public class TTextInteraction : MonoBehaviour
     }
 
     // When the mouse is pressed on the collider
-    private void OnMouseDown()
-    {
-        Debug.Log("Mouse Down on " + text.text);
-        foreach (var e in onMouseDown)
-        {
-            e.Invoke();
-        }
-    }
+    // private void OnMouseDown()
+    // {
+    //     Debug.Log("Mouse Down on " + text.text);
+    //     foreach (var e in onMouseDown)
+    //     {
+    //         e.Invoke();
+    //     }
+    // }
 
-    // When the mouse is released over the collider after a press (a complete "click")
-    private void OnMouseUpAsButton()
-    {
-        foreach (var e in onMouseUp)
-        {
-            e.Invoke();
-        }
+    // // When the mouse is released over the collider after a press (a complete "click")
+    // private void OnMouseUpAsButton()
+    // {
+    //     foreach (var e in onMouseUp)
+    //     {
+    //         e.Invoke();
+    //     }
+    //     // MovePlayer();
+    // }
 
-        // Apply adjustments
-        Vector3 targetPosition = player.transform.TransformDirection(positionAdjustment);
-        Vector3 targetRotation = rotationAdjustment;
-        // If there is no target view, just adjust the current view
-        if (targetView == null)
-        {
-            targetPosition += player.transform.position;
-            targetRotation += player.transform.eulerAngles;
-        }
-        // Otherwise use the target view
-        else
-        {
-            targetPosition += targetView.position;
-            targetRotation += targetView.eulerAngles;
-        }
-        // Apply new position and rotation
-        player.MoveTo(targetPosition, moveDuration);
-        player.RotateTo(targetRotation, rotateDuration);
-    }
+    // // When the mouse enters the collider
+    // private void OnMouseEnter()
+    // {
+    //     foreach (var e in onMouseEnter)
+    //     {
+    //         e.Invoke();
+    //     }
+    // }
 
-    // When the mouse enters the collider
-    private void OnMouseEnter()
-    {
-        foreach (var e in onMouseEnter)
-        {
-            e.Invoke();
-        }
-    }
+    // // When the mouse exits the collider
+    // private void OnMouseExit()
+    // {
+    //     foreach (var e in onMouseExit)
+    //     {
+    //         e.Invoke();
+    //     }
+    // }
 
-    // When the mouse exits the collider
-    private void OnMouseExit()
-    {
-        foreach (var e in onMouseExit)
-        {
-            e.Invoke();
-        }
-    }
-
-    // Every frame the mouse is over the collider
-    private void OnMouseOver()
-    {
-        foreach (var e in onMouseOver)
-        {
-            e.Invoke();
-        }
-    }
+    // // Every frame the mouse is over the collider
+    // private void OnMouseOver()
+    // {
+    //     foreach (var e in onMouseOver)
+    //     {
+    //         e.Invoke();
+    //     }
+    // }
 
     public void SetTextColor(Color color)
     {
@@ -142,11 +127,25 @@ public class TTextInteraction : MonoBehaviour
 
     public void LinkToText(string linkId, string linkText, int linkIndex)
     {
+        if (!interactable) return;
+        // Debug.Log("Called link text");
         if (linkedObjects == null) return;
+        // Debug.Log("Link objects valid");
         if (linkedObjects.Count <= linkIndex) return;
+        
         if (linkedObjects[linkIndex] == null) return;
+        // Debug.Log("Linked index valid");
+        // Debug.Log("Link to " + linkedObjects[linkIndex].name);
+
         linkedObjects[linkIndex].SetActive(true);
-        gameObject.SetActive(false);
+        MovePlayer();
+        if (disableOnClick) 
+        {
+            text.DOFade(0f, disableFadeDuration).OnComplete(() => 
+            {
+                gameObject.SetActive(false);
+            });
+        }
     }
 
     public void GoToText(int linkedObjectIndex)
@@ -173,5 +172,27 @@ public class TTextInteraction : MonoBehaviour
     public void MoveTo(Transform dest)
     {
         transform.DOMove(dest.position, textMoveDuration);
+    }
+
+    public void MovePlayer()
+    {
+        // Apply adjustments
+        Vector3 targetPosition = player.transform.TransformDirection(positionAdjustment);
+        Vector3 targetRotation = rotationAdjustment;
+        // If there is no target view, just adjust the current view
+        if (targetView == null)
+        {
+            targetPosition += player.transform.position;
+            targetRotation += player.transform.eulerAngles;
+        }
+        // Otherwise use the target view
+        else
+        {
+            targetPosition += targetView.position;
+            targetRotation += targetView.eulerAngles;
+        }
+        // Apply new position and rotation
+        player.MoveTo(targetPosition, moveDuration);
+        player.RotateTo(targetRotation, rotateDuration);
     }
 }
