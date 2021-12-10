@@ -42,6 +42,9 @@ public class TTextInteraction : MonoBehaviour
     public bool disableOnClick = true;
     public float disableFadeDuration = 0f;
 
+    public float enableFadeAlpha = 1f;
+    public float enableFadeDuration = 0f;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -129,23 +132,34 @@ public class TTextInteraction : MonoBehaviour
     {
         if (!interactable) return;
         // Debug.Log("Called link text");
-        if (linkedObjects == null) return;
-        // Debug.Log("Link objects valid");
-        if (linkedObjects.Count <= linkIndex) return;
-        
-        if (linkedObjects[linkIndex] == null) return;
-        // Debug.Log("Linked index valid");
-        // Debug.Log("Link to " + linkedObjects[linkIndex].name);
 
-        linkedObjects[linkIndex].SetActive(true);
+        if (linkedObjects != null && linkedObjects.Count > linkIndex && linkedObjects[linkIndex] != null)
+        {
+            linkedObjects[linkIndex].SetActive(true);
+            if (linkedObjects[linkIndex].GetComponent<TTextInteraction>() != null)
+            {
+                linkedObjects[linkIndex].GetComponent<TTextInteraction>().FadeIn();
+            }
+        }
         MovePlayer();
         if (disableOnClick) 
         {
-            text.DOFade(0f, disableFadeDuration).OnComplete(() => 
-            {
-                gameObject.SetActive(false);
-            });
+            FadeOutAndDisable();
         }
+    }
+
+    public void FadeIn()
+    {
+        // text.DOFade(0f, 0f);
+        // text.DOFade(enableFadeAlpha, enableFadeDuration);
+    }
+
+    public void FadeOutAndDisable()
+    {
+        text.DOFade(0f, disableFadeDuration).OnComplete(() => 
+        {
+            gameObject.SetActive(false);
+        });   
     }
 
     public void GoToText(int linkedObjectIndex)
