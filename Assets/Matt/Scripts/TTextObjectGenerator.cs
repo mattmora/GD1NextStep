@@ -7,6 +7,8 @@ using System.Text.RegularExpressions;
 [ExecuteInEditMode]
 public class TTextObjectGenerator : MonoBehaviour
 {
+    public string parentName;
+
     [TextArea]
     public string textBlock;
 
@@ -28,6 +30,9 @@ public class TTextObjectGenerator : MonoBehaviour
     {
         if (activate)
         {
+            var parent = new GameObject();
+            parent.name = parentName;
+
             int objNum = 1;
             // string strippedBlock = RemoveBetween(textBlock, "[", "]");
             string strippedBlock = textBlock;
@@ -37,6 +42,7 @@ public class TTextObjectGenerator : MonoBehaviour
                 string text = t.Trim();
                 if (text == string.Empty) continue;
                 var go = Instantiate(textPrefab);
+                go.transform.SetParent(parent.transform);
                 go.GetComponent<TMP_Text>().text = text;
                 go.name = objNum.ToString() + " " + text.Substring(0, text.Length > 15 ? 15 : text.Length);
                 objNum++;

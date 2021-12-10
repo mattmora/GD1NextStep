@@ -1,0 +1,70 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &2539471616244732301
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2539471616244732299}
+  - component: {fileID: 2539471616244732298}
+  m_Layer: 0
+  m_Name: GenerateTextObjects
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2539471616244732299
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2539471616244732301}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2539471616244732298
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2539471616244732301}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 233329d0be3aa4bfca14b9fdfb840dbd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  parentName: Test
+  textBlock: "[Game]\n\nOpening. 0 - 2D\n\n\n\n\nScene 1. Dream (memory)- 2D\n\n[Frantic
+    footsteps/panting]\n\nANTONIO\n\nWhat\u2019s with this? \n\nWhy are they chasing
+    me? \n\nI didn\u2019t do anything\u2026 \n\nSo, why? \n\n[Scuffle]\n\nWait--wait,
+    stop!--\n\n[Muffled shouts/fade out]\n\n\nScene 2. Reality (jail) - 3D\n\nANTONIO\n\nWait!--\n\n[Fade
+    In/blur]\n\nANTONIO\n\nIt was a dream\u2026?\n\n[Turn]\n\nBut, where--?\n\n[Turn+1]\n\nOh...right.\n\n[Turn+1]\n\nIt
+    really happened.\n\n[Turn+1]\n\nHow could they do that?\n\n[Turn+1]\n\nWe used
+    to go to school together.\n\n[Turn+1]\n\nWe used to play together.\n\n[Turn+1]\n\nDoesn\u2019t
+    that mean a thing\u2026?\n\n[Turn+10]\n\n[New \u201Cscene\u201D] \n\nCELL\n\nWelcome
+    to the beginning of the end.\n\nCongratulations.\n\nYou have unlocked The End.\n\nContinue
+    to proceed to your sentence.\n\n[Turn]\n\nWould you like to proceed?\n\nWould
+    you like to take the next step?\n\nKnowing it will be your last?\n\n\n\n\n\nScene
+    3. Dream 2 (nightmare) - 3D\nANTONIO\nThere\u2019s no other way to do this.\n\n[STEP]\n\nThis
+    is my only option now..\n\n[STEP]\n\nIf not me then who ?\n\n[STEP]\n\nIf not
+    me then who will do it for them\n\n[PEDAL]\n\nIf not me then who will care for
+    them\n\n[PEDAL]\n\nIf not me then who ?\n\n[PEDAL]\n\nHe always said \u201CIf
+    not you then who?\u201D\n\n[PEDAL]\n\nBut really WHO?!\n\n[HOLE]\n\n\nReckless
+    like always....\n\t\t\t\t\tNever seen him\n\t\t\tHere at rock bottom.......\nALL
+    FOR THEM..\n\t.............A position of power\n[FALL]\nWhat I wanted.......\n.................What
+    I\u2019d get\n\t\tNavigating\n\t\t\t\tThe tight streets\n\t\t\t\t\t\t\tOld Yellow
+    Cab\n[FALL]\n\nI was able to study and keep my grades.......\nIt has been two
+    decades\nSounds cool\nNot when you\u2019re dead........\n\n[WAKE UP]\n\nScene
+    4. Reality 2 (letter) - 3D\n\n\nScene 5. Dream 3 (letter) - 3D\n\n\n\n\n\n\n\n\n"
+  textPrefab: {fileID: 1347645649924280504, guid: 9a4eab165985fc946b0660bfc9e5cea6, type: 3}
+  activate: 0
