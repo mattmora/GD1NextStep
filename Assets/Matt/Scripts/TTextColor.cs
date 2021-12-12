@@ -21,12 +21,13 @@ public class TTextColor : MonoBehaviour
     {
         text = GetComponent<TMP_Text>();
         interaction = GetComponent<TTextInteraction>();
-        vertexColor = text.color;
     }
 
     // Update is called once per frame
     void Update()
     {
+        vertexColor = text.color;
+
         string[] s = text.text.Split(new string[] { "<color" }, StringSplitOptions.None);
         while (textColors.Count < s.Length - 1)
         {
