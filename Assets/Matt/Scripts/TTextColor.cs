@@ -8,49 +8,75 @@ using System;
 public class TTextColor : MonoBehaviour
 {
     TMP_Text text;
+    TTextInteraction interaction;
+
+    Color vertexColor;
+    public Color usedVertexColor = Color.gray;
 
     public List<Color> textColors = new List<Color>();
+    public List<Color> usedColors = new List<Color>();
     List<Color> hoverColors = new List<Color>();
 
-    bool mouseIsOver;
+    bool used;
 
-    // Start is called before the first frame update
-    void Start()
+    void Awake()
     {
         text = GetComponent<TMP_Text>();
+        interaction = GetComponent<TTextInteraction>();
+    }
+
+    void Start()
+    {
+        vertexColor = text.color;
     }
 
     // Update is called once per frame
     void Update()
     {
+        if (text == null)
+        {
+            text = GetComponent<TMP_Text>();
+        }
+        if (interaction == null)
+        {
+            interaction = GetComponent<TTextInteraction>();
+        }
+
+        UpdateColors();
+    }
+
+    public void SetUsed(bool used)
+    {
+        used = false;
+        text.color = used ? usedVertexColor : vertexColor;
+
+        UpdateColors();
+    }
+
+    private void UpdateColors()
+    {
         string[] s = text.text.Split(new string[] { "<color" }, StringSplitOptions.None);
         while (textColors.Count < s.Length - 1)
         {
             textColors.Add(Color.black);
+            usedColors.Add(Color.black);
             //hoverColors.Add(Color.black);
         }
+
+        if (s.Length == 0) return;
 
         string newText = s[0];
         for (int i = 1; i < s.Length; ++i)
         {
-            if (!mouseIsOver)
+            if (!used)
             {
                 newText += "<color=#" + ColorUtility.ToHtmlStringRGBA(textColors[i - 1]) + ">";
             }
             else 
             {
-                newText += "<color=#" + ColorUtility.ToHtmlStringRGBA(hoverColors[i - 1]) + ">";
+                newText += "<color=#" + ColorUtility.ToHtmlStringRGBA(usedColors[i - 1]) + ">";
             }
             newText += s[i].Split(new char[] { '>' }, 2, StringSplitOptions.None)[1];
         }
-
-        text.text = newText;
-
-        mouseIsOver = false;
-    }
-
-    private void OnMouseOver()
-    {
-        //mouseIsOver = true ;
     }
 }
