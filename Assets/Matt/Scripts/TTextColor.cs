@@ -45,9 +45,9 @@ public class TTextColor : MonoBehaviour
         UpdateColors();
     }
 
-    public void SetUsed(bool used)
+    public void SetUsed(bool u)
     {
-        used = false;
+        used = u;
         text.color = used ? usedVertexColor : vertexColor;
 
         UpdateColors();
