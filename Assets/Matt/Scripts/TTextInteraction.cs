@@ -37,7 +37,11 @@ public class TTextInteraction : MonoBehaviour
     TMP_Text text;
     BoxCollider boxCollider;
 
+    TTextColor textColor;
+
     public bool interactable = true;
+
+    public int numUses = 1;
 
     public bool disableOnClick = true;
     public float disableFadeDuration = 0f;
@@ -50,6 +54,7 @@ public class TTextInteraction : MonoBehaviour
         player = GameObject.FindGameObjectWithTag("Player").GetComponent<TPlayerController>();
         text = GetComponent<TMP_Text>();
         boxCollider = GetComponent<BoxCollider>();
+        textColor = GetComponent<TTextColor>();
     }
 
     private void OnEnable() 
@@ -102,8 +107,10 @@ public class TTextInteraction : MonoBehaviour
 
     public void FadeOutAndDisable()
     {
+        // Debug.Log("Start fade out");
         text.DOFade(0f, disableFadeDuration).OnComplete(() => 
         {
+            // Debug.Log("End fade out");
             gameObject.SetActive(false);
         });   
     }
@@ -112,7 +119,13 @@ public class TTextInteraction : MonoBehaviour
     {
         if (linkedObjects != null && linkedObjects.Count > linkIndex && linkedObjects[linkIndex] != null)
         {
+            // Debug.Log("Enabled " + linkedObjects[linkIndex].name);
             linkedObjects[linkIndex].SetActive(true);
+        }
+
+        if (numUses <= 0)
+        {
+            textColor.SetUsed(true);
         }
         
         if (disableOnClick) 
@@ -123,8 +136,13 @@ public class TTextInteraction : MonoBehaviour
 
     public void LinkToText(string linkId, string linkText, int linkIndex)
     {
-        Debug.Log("link");
+        // Debug.Log("link");
         if (!interactable) return;
+
+        if (numUses <= 0) return;
+
+        numUses--;
+
         // Debug.Log("Called link text");
 
         MovePlayer();
