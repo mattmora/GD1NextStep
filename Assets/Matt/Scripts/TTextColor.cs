@@ -45,6 +45,8 @@ public class TTextColor : MonoBehaviour
             text.color = usedVertexColor;
         }
 
+        if (s.Length == 0) return;
+
         string newText = s[0];
         for (int i = 1; i < s.Length; ++i)
         {
