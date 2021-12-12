@@ -17,10 +17,17 @@ public class TTextColor : MonoBehaviour
     public List<Color> usedColors = new List<Color>();
     List<Color> hoverColors = new List<Color>();
 
+    bool used;
+
     void Awake()
     {
         text = GetComponent<TMP_Text>();
         interaction = GetComponent<TTextInteraction>();
+    }
+
+    void Start()
+    {
+        vertexColor = text.color;
     }
 
     // Update is called once per frame
@@ -35,8 +42,19 @@ public class TTextColor : MonoBehaviour
             interaction = GetComponent<TTextInteraction>();
         }
 
-        vertexColor = text.color;
+        UpdateColors();
+    }
 
+    public void SetUsed(bool used)
+    {
+        used = false;
+        text.color = used ? usedVertexColor : vertexColor;
+
+        UpdateColors();
+    }
+
+    private void UpdateColors()
+    {
         string[] s = text.text.Split(new string[] { "<color" }, StringSplitOptions.None);
         while (textColors.Count < s.Length - 1)
         {
@@ -45,21 +63,12 @@ public class TTextColor : MonoBehaviour
             //hoverColors.Add(Color.black);
         }
 
-        if (interaction.numUses > 0)
-        {
-            text.color = vertexColor;
-        }
-        else 
-        {
-            text.color = usedVertexColor;
-        }
-
         if (s.Length == 0) return;
 
         string newText = s[0];
         for (int i = 1; i < s.Length; ++i)
         {
-            if (interaction.numUses > 0)
+            if (!used)
             {
                 newText += "<color=#" + ColorUtility.ToHtmlStringRGBA(textColors[i - 1]) + ">";
             }
@@ -69,7 +78,5 @@ public class TTextColor : MonoBehaviour
             }
             newText += s[i].Split(new char[] { '>' }, 2, StringSplitOptions.None)[1];
         }
-
-        text.text = newText;
     }
 }

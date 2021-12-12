@@ -37,6 +37,8 @@ public class TTextInteraction : MonoBehaviour
     TMP_Text text;
     BoxCollider boxCollider;
 
+    TTextColor textColor;
+
     public bool interactable = true;
 
     public int numUses = 1;
@@ -52,6 +54,7 @@ public class TTextInteraction : MonoBehaviour
         player = GameObject.FindGameObjectWithTag("Player").GetComponent<TPlayerController>();
         text = GetComponent<TMP_Text>();
         boxCollider = GetComponent<BoxCollider>();
+        textColor = GetComponent<TTextColor>();
     }
 
     private void OnEnable() 
@@ -119,6 +122,11 @@ public class TTextInteraction : MonoBehaviour
             // Debug.Log("Enabled " + linkedObjects[linkIndex].name);
             linkedObjects[linkIndex].SetActive(true);
         }
+
+        if (numUses <= 0)
+        {
+            textColor.SetUsed(true);
+        }
         
         if (disableOnClick) 
         {
@@ -134,6 +142,7 @@ public class TTextInteraction : MonoBehaviour
         if (numUses <= 0) return;
 
         numUses--;
+
         // Debug.Log("Called link text");
 
         MovePlayer();
