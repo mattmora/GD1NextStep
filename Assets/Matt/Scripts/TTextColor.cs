@@ -26,6 +26,15 @@ public class TTextColor : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (text == null)
+        {
+            text = GetComponent<TMP_Text>();
+        }
+        if (interaction == null)
+        {
+            interaction = GetComponent<TTextInteraction>();
+        }
+
         vertexColor = text.color;
 
         string[] s = text.text.Split(new string[] { "<color" }, StringSplitOptions.None);
