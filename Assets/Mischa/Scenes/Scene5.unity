@@ -627,7 +627,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: <color=#000000FF><link>Bruno...</link></color>
+  m_text: <color=black><link>Bruno...</link></color>
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 69cac2c762100431386dd37a55174a7f, type: 2}
   m_sharedMaterial: {fileID: -9206762542071339050, guid: 69cac2c762100431386dd37a55174a7f, type: 2}
@@ -744,7 +744,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fb35bcd67102b604f9cf5922337e8f5d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  targetView: {fileID: 1971386390}
+  targetView: {fileID: 845534883}
   positionAdjustment: {x: 0, y: 0, z: 0}
   rotationAdjustment: {x: 0, y: 0, z: 0}
   moveDuration: 1
@@ -1302,8 +1302,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   usedVertexColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
-  textColors: []
-  usedColors: []
+  textColors:
+  - {r: 0, g: 0, b: 0, a: 1}
+  usedColors:
+  - {r: 0, g: 0, b: 0, a: 1}
 --- !u!114 &538973941
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1324,7 +1326,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: will you want to see me again?
+  m_text: will <color=blue><link>you</link></color> want to see me again?
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 69cac2c762100431386dd37a55174a7f, type: 2}
   m_sharedMaterial: {fileID: -9206762542071339050, guid: 69cac2c762100431386dd37a55174a7f, type: 2}
@@ -1790,7 +1792,7 @@ Transform:
   m_Children:
   - {fileID: 1669805773}
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &845534884
 MonoBehaviour:
@@ -1809,76 +1811,6 @@ MonoBehaviour:
   defaultMoveEase: 0
   defaultRotateEase: 0
   fovChangeDuration: 1
---- !u!1001 &857757977
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 2539471616244732298, guid: c50ea2371f2148a4bb90b8af5fa2602f, type: 3}
-      propertyPath: activate
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2539471616244732298, guid: c50ea2371f2148a4bb90b8af5fa2602f, type: 3}
-      propertyPath: textBlock
-      value: "\nANTONIO\n\nBruno...\n\n[PAUSE/NEW LINE]\n\n\nI know you\u2019ll grow
-        up to be a fine young man one day.\n\n\n[SHIFT]\n\nI can only hope that I\u2019ll
-        be there to see you grow...\n\n\n[SHIFT]\n\nBut I wonder, will you want to
-        see me again?\n\n\n[SHIFT]\n\n\nI hope this\u2019ll make up for my absence
-        after all these years...\n\n\n[SHIFT]\n\nBruno...\n\n\n[SHIFT]\n\n\nI\u2019m
-        coming home.\n\n[FADE OUT/TILT]"
-      objectReference: {fileID: 0}
-    - target: {fileID: 2539471616244732299, guid: c50ea2371f2148a4bb90b8af5fa2602f, type: 3}
-      propertyPath: m_RootOrder
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2539471616244732299, guid: c50ea2371f2148a4bb90b8af5fa2602f, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2539471616244732299, guid: c50ea2371f2148a4bb90b8af5fa2602f, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2539471616244732299, guid: c50ea2371f2148a4bb90b8af5fa2602f, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2539471616244732299, guid: c50ea2371f2148a4bb90b8af5fa2602f, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2539471616244732299, guid: c50ea2371f2148a4bb90b8af5fa2602f, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2539471616244732299, guid: c50ea2371f2148a4bb90b8af5fa2602f, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2539471616244732299, guid: c50ea2371f2148a4bb90b8af5fa2602f, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2539471616244732299, guid: c50ea2371f2148a4bb90b8af5fa2602f, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2539471616244732299, guid: c50ea2371f2148a4bb90b8af5fa2602f, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2539471616244732299, guid: c50ea2371f2148a4bb90b8af5fa2602f, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2539471616244732301, guid: c50ea2371f2148a4bb90b8af5fa2602f, type: 3}
-      propertyPath: m_Name
-      value: GenerateTextObjects
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: c50ea2371f2148a4bb90b8af5fa2602f, type: 3}
 --- !u!1 &923910571
 GameObject:
   m_ObjectHideFlags: 0
@@ -2057,8 +1989,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   usedVertexColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
-  textColors: []
-  usedColors: []
+  textColors:
+  - {r: 0, g: 0, b: 0, a: 1}
+  usedColors:
+  - {r: 0, g: 0, b: 0, a: 1}
 --- !u!114 &966428379
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2079,7 +2013,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "I hope this\u2019ll <link>make up</link>..."
+  m_text: "I hope this\u2019ll <color=black><link>make up</link></color>..."
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 69cac2c762100431386dd37a55174a7f, type: 2}
   m_sharedMaterial: {fileID: -9206762542071339050, guid: 69cac2c762100431386dd37a55174a7f, type: 2}
@@ -2360,8 +2294,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   usedVertexColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
-  textColors: []
-  usedColors: []
+  textColors:
+  - {r: 0, g: 0, b: 0, a: 1}
+  usedColors:
+  - {r: 0, g: 0, b: 0, a: 1}
 --- !u!114 &968893744
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2382,7 +2318,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: But I <link>wonder</link>,
+  m_text: "But \nI <color=black><link>wonder</link></color>,"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 69cac2c762100431386dd37a55174a7f, type: 2}
   m_sharedMaterial: {fileID: -9206762542071339050, guid: 69cac2c762100431386dd37a55174a7f, type: 2}
@@ -2445,7 +2381,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: -0.31243706, y: 0, z: 0, w: 0}
+  m_margin: {x: -0.9932251, y: 0, z: 0, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -2723,8 +2659,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   usedVertexColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
-  textColors: []
-  usedColors: []
+  textColors:
+  - {r: 0, g: 0, b: 0, a: 1}
+  usedColors:
+  - {r: 0, g: 0, b: 0, a: 1}
 --- !u!114 &1204563041
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2745,7 +2683,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "I\u2019m coming <link>home</link>."
+  m_text: "I\u2019m coming <color=blue><link>home</link></color>."
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 69cac2c762100431386dd37a55174a7f, type: 2}
   m_sharedMaterial: {fileID: -9206762542071339050, guid: 69cac2c762100431386dd37a55174a7f, type: 2}
@@ -2928,7 +2866,7 @@ Transform:
   - {fileID: 1204563036}
   - {fileID: 247363693}
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1264281612
 GameObject:
@@ -3102,8 +3040,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "I know you\u2019ll <color=#000000FF><link>turn</link></color> into a fine
-    young man one day."
+  m_text: "I know you\u2019ll turn into a fine young man <color=blue><link>one day.</link></color>"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 69cac2c762100431386dd37a55174a7f, type: 2}
   m_sharedMaterial: {fileID: -9206762542071339050, guid: 69cac2c762100431386dd37a55174a7f, type: 2}
@@ -3258,7 +3195,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1272225857
 RectTransform:
   m_ObjectHideFlags: 0
@@ -3275,7 +3212,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 5.4, y: 1.83}
+  m_AnchoredPosition: {x: 5.405, y: 1.83}
   m_SizeDelta: {x: 10.6758, y: 1.2789}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!65 &1272225858
@@ -3687,8 +3624,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   usedVertexColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
-  textColors: []
-  usedColors: []
+  textColors:
+  - {r: 0, g: 0, b: 0, a: 1}
+  usedColors:
+  - {r: 0, g: 0, b: 0, a: 1}
 --- !u!114 &1511520025
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3709,7 +3648,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "I can only hope that I\u2019ll be there to <link>see you</link> grow..."
+  m_text: "I can only hope that I\u2019ll be there to <color=blue><link>see you</link></color>
+    grow..."
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 69cac2c762100431386dd37a55174a7f, type: 2}
   m_sharedMaterial: {fileID: -9206762542071339050, guid: 69cac2c762100431386dd37a55174a7f, type: 2}
