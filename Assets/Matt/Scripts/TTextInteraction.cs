@@ -54,15 +54,21 @@ public class TTextInteraction : MonoBehaviour
 
     private void OnEnable() 
     {
-        if (enableFadeAlpha == text.alpha && enableFadeDuration == 0) return;
-        text.alpha = 0f;
-        text.DOFade(enableFadeAlpha, enableFadeDuration).OnComplete(() =>
+        if (enableFadeAlpha == text.alpha && enableFadeDuration == 0)
         {
-            if (useTimer)
+            text.alpha = 0f;
+            text.DOFade(enableFadeAlpha, enableFadeDuration).OnComplete(() =>
             {
-                StartCoroutine(TimerCountdown());
-            }
-        });
+                if (useTimer)
+                {
+                    StartCoroutine(TimerCountdown());
+                }
+            });
+        }
+        else if (useTimer)
+        {
+            StartCoroutine(TimerCountdown());
+        }
     }
 
     // Start is called before the first frame update
