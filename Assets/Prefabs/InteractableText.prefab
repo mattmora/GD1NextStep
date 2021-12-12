@@ -60,16 +60,15 @@ MonoBehaviour:
   moveDuration: 1
   rotateDuration: 1
   textMoveDuration: 1
-  onMouseDown: []
-  onMouseUp: []
-  onMouseEnter: []
-  onMouseExit: []
-  onMouseOver: []
   onTimerEnd: []
   linkedObjects: []
   useTimer: 0
   timerDuration: 0
   interactable: 1
+  disableOnClick: 1
+  disableFadeDuration: 0
+  enableFadeAlpha: 1
+  enableFadeDuration: 0
 --- !u!114 &207006421633658640
 MonoBehaviour:
   m_ObjectHideFlags: 0
