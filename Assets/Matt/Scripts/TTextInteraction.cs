@@ -72,6 +72,7 @@ public class TTextInteraction : MonoBehaviour
         }
         else if (useTimer)
         {
+            text.alpha = 1f;
             StartCoroutine(TimerCountdown());
         }
     }
