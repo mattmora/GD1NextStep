@@ -197,7 +197,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  - {fileID: -9206762542071339050, guid: 69cac2c762100431386dd37a55174a7f, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -270,7 +270,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 97a179042eb4dc94cbf4e0dc8392ea26, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  usedVertexColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
   textColors: []
+  usedColors: []
 --- !u!114 &88773452
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -293,8 +295,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: <link>Bruno</link>...
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 69cac2c762100431386dd37a55174a7f, type: 2}
+  m_sharedMaterial: {fileID: -9206762542071339050, guid: 69cac2c762100431386dd37a55174a7f, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -419,6 +421,7 @@ MonoBehaviour:
   useTimer: 0
   timerDuration: 0
   interactable: 1
+  numUses: 1
   disableOnClick: 1
   disableFadeDuration: 0
   enableFadeAlpha: 1
@@ -527,7 +530,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  - {fileID: -9206762542071339050, guid: 69cac2c762100431386dd37a55174a7f, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -600,8 +603,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 97a179042eb4dc94cbf4e0dc8392ea26, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  usedVertexColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
   textColors:
   - {r: 0, g: 0, b: 0, a: 1}
+  usedColors: []
 --- !u!114 &283794721
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -624,8 +629,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: <color=#000000FF><link>Bruno...</link></color>
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 69cac2c762100431386dd37a55174a7f, type: 2}
+  m_sharedMaterial: {fileID: -9206762542071339050, guid: 69cac2c762100431386dd37a55174a7f, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -751,6 +756,7 @@ MonoBehaviour:
   useTimer: 0
   timerDuration: 0
   interactable: 1
+  numUses: 1
   disableOnClick: 1
   disableFadeDuration: 0
   enableFadeAlpha: 1
@@ -889,7 +895,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  - {fileID: -9206762542071339050, guid: 69cac2c762100431386dd37a55174a7f, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -962,7 +968,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 97a179042eb4dc94cbf4e0dc8392ea26, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  usedVertexColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
   textColors: []
+  usedColors: []
 --- !u!114 &468460441
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -985,8 +993,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: after all <link>these years</link>...
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 69cac2c762100431386dd37a55174a7f, type: 2}
+  m_sharedMaterial: {fileID: -9206762542071339050, guid: 69cac2c762100431386dd37a55174a7f, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -1046,7 +1054,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: -0.033168793, w: 5.0885496}
+  m_margin: {x: 2.2070522, y: 0, z: -3.0234299, w: 5.0885496}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -1111,6 +1119,7 @@ MonoBehaviour:
   useTimer: 0
   timerDuration: 0
   interactable: 1
+  numUses: 1
   disableOnClick: 1
   disableFadeDuration: 0
   enableFadeAlpha: 1
@@ -1219,7 +1228,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  - {fileID: -9206762542071339050, guid: 69cac2c762100431386dd37a55174a7f, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -1292,7 +1301,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 97a179042eb4dc94cbf4e0dc8392ea26, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  usedVertexColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
   textColors: []
+  usedColors: []
 --- !u!114 &538973941
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1315,8 +1326,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: will you want to see me again?
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 69cac2c762100431386dd37a55174a7f, type: 2}
+  m_sharedMaterial: {fileID: -9206762542071339050, guid: 69cac2c762100431386dd37a55174a7f, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -1376,7 +1387,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_margin: {x: 0, y: 0, z: -1.7183394, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -1441,6 +1452,7 @@ MonoBehaviour:
   useTimer: 0
   timerDuration: 0
   interactable: 1
+  numUses: 1
   disableOnClick: 1
   disableFadeDuration: 0
   enableFadeAlpha: 1
@@ -1519,7 +1531,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  - {fileID: -9206762542071339050, guid: 69cac2c762100431386dd37a55174a7f, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -1592,7 +1604,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 97a179042eb4dc94cbf4e0dc8392ea26, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  usedVertexColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
   textColors: []
+  usedColors: []
 --- !u!114 &585904214
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1615,8 +1629,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: for my <link>absence</link>...
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 69cac2c762100431386dd37a55174a7f, type: 2}
+  m_sharedMaterial: {fileID: -9206762542071339050, guid: 69cac2c762100431386dd37a55174a7f, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -1676,7 +1690,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: 0.01981163, w: 5.145101}
+  m_margin: {x: 2.174471, y: 0, z: -1.1310902, w: 5.145101}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -1741,6 +1755,7 @@ MonoBehaviour:
   useTimer: 0
   timerDuration: 0
   interactable: 1
+  numUses: 1
   disableOnClick: 1
   disableFadeDuration: 0
   enableFadeAlpha: 1
@@ -1793,6 +1808,7 @@ MonoBehaviour:
   turnTexts: []
   defaultMoveEase: 0
   defaultRotateEase: 0
+  fovChangeDuration: 1
 --- !u!1001 &857757977
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1967,7 +1983,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  - {fileID: -9206762542071339050, guid: 69cac2c762100431386dd37a55174a7f, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -2040,7 +2056,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 97a179042eb4dc94cbf4e0dc8392ea26, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  usedVertexColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
   textColors: []
+  usedColors: []
 --- !u!114 &966428379
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2063,8 +2081,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: "I hope this\u2019ll <link>make up</link>..."
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 69cac2c762100431386dd37a55174a7f, type: 2}
+  m_sharedMaterial: {fileID: -9206762542071339050, guid: 69cac2c762100431386dd37a55174a7f, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -2124,7 +2142,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: 0.021591187, w: 5.108232}
+  m_margin: {x: -1.0494156, y: 0, z: 0.021591187, w: 5.108232}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -2189,6 +2207,7 @@ MonoBehaviour:
   useTimer: 0
   timerDuration: 0
   interactable: 1
+  numUses: 1
   disableOnClick: 1
   disableFadeDuration: 0
   enableFadeAlpha: 1
@@ -2267,7 +2286,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  - {fileID: -9206762542071339050, guid: 69cac2c762100431386dd37a55174a7f, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -2340,7 +2359,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 97a179042eb4dc94cbf4e0dc8392ea26, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  usedVertexColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
   textColors: []
+  usedColors: []
 --- !u!114 &968893744
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2363,8 +2384,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: But I <link>wonder</link>,
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 69cac2c762100431386dd37a55174a7f, type: 2}
+  m_sharedMaterial: {fileID: -9206762542071339050, guid: 69cac2c762100431386dd37a55174a7f, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -2424,7 +2445,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_margin: {x: -0.31243706, y: 0, z: 0, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -2489,6 +2510,7 @@ MonoBehaviour:
   useTimer: 0
   timerDuration: 0
   interactable: 1
+  numUses: 1
   disableOnClick: 1
   disableFadeDuration: 0
   enableFadeAlpha: 1
@@ -2627,7 +2649,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  - {fileID: -9206762542071339050, guid: 69cac2c762100431386dd37a55174a7f, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -2700,7 +2722,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 97a179042eb4dc94cbf4e0dc8392ea26, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  usedVertexColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
   textColors: []
+  usedColors: []
 --- !u!114 &1204563041
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2723,8 +2747,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: "I\u2019m coming <link>home</link>."
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 69cac2c762100431386dd37a55174a7f, type: 2}
+  m_sharedMaterial: {fileID: -9206762542071339050, guid: 69cac2c762100431386dd37a55174a7f, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -2849,6 +2873,7 @@ MonoBehaviour:
   useTimer: 0
   timerDuration: 0
   interactable: 1
+  numUses: 1
   disableOnClick: 1
   disableFadeDuration: 0
   enableFadeAlpha: 1
@@ -2936,7 +2961,7 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1264281612}
   m_LocalRotation: {x: 0, y: 0.17364816, z: 0, w: 0.9848078}
-  m_LocalPosition: {x: 0, y: 0, z: -1.3499999}
+  m_LocalPosition: {x: 0, y: 0, z: -1.92}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1252008639}
@@ -2944,7 +2969,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 20, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -3.41, y: 3.46}
+  m_AnchoredPosition: {x: -2.51, y: 3.37}
   m_SizeDelta: {x: 10.3677, y: 1.3268}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!65 &1264281614
@@ -2979,7 +3004,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  - {fileID: -9206762542071339050, guid: 69cac2c762100431386dd37a55174a7f, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -3052,9 +3077,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 97a179042eb4dc94cbf4e0dc8392ea26, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  usedVertexColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
   textColors:
   - {r: 0, g: 0, b: 0, a: 1}
   - {r: 0, g: 0, b: 0, a: 1}
+  usedColors: []
 --- !u!114 &1264281618
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3075,10 +3102,11 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "I know you\u2019ll <link>turn</link> into a fine young man one day."
+  m_text: "I know you\u2019ll <color=#000000FF><link>turn</link></color> into a fine
+    young man one day."
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 69cac2c762100431386dd37a55174a7f, type: 2}
+  m_sharedMaterial: {fileID: -9206762542071339050, guid: 69cac2c762100431386dd37a55174a7f, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -3138,7 +3166,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: -2.7744188, w: 0}
+  m_margin: {x: 0, y: 0, z: -4.5156507, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -3203,6 +3231,7 @@ MonoBehaviour:
   useTimer: 0
   timerDuration: 0
   interactable: 1
+  numUses: 1
   disableOnClick: 1
   disableFadeDuration: 0
   enableFadeAlpha: 1
@@ -3246,7 +3275,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 8.66, y: 1.83}
+  m_AnchoredPosition: {x: 5.4, y: 1.83}
   m_SizeDelta: {x: 10.6758, y: 1.2789}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!65 &1272225858
@@ -3281,7 +3310,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  - {fileID: -9206762542071339050, guid: 69cac2c762100431386dd37a55174a7f, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -3354,7 +3383,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 97a179042eb4dc94cbf4e0dc8392ea26, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  usedVertexColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
   textColors: []
+  usedColors: []
 --- !u!114 &1272225862
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3377,8 +3408,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: <link>you</link>
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 69cac2c762100431386dd37a55174a7f, type: 2}
+  m_sharedMaterial: {fileID: -9206762542071339050, guid: 69cac2c762100431386dd37a55174a7f, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -3438,7 +3469,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_margin: {x: 1.325942, y: 0, z: 6.528961, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -3503,6 +3534,7 @@ MonoBehaviour:
   useTimer: 0
   timerDuration: 0
   interactable: 1
+  numUses: 1
   disableOnClick: 1
   disableFadeDuration: 0
   enableFadeAlpha: 1
@@ -3581,7 +3613,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  - {fileID: -9206762542071339050, guid: 69cac2c762100431386dd37a55174a7f, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -3654,7 +3686,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 97a179042eb4dc94cbf4e0dc8392ea26, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  usedVertexColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
   textColors: []
+  usedColors: []
 --- !u!114 &1511520025
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3677,8 +3711,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: "I can only hope that I\u2019ll be there to <link>see you</link> grow..."
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 69cac2c762100431386dd37a55174a7f, type: 2}
+  m_sharedMaterial: {fileID: -9206762542071339050, guid: 69cac2c762100431386dd37a55174a7f, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -3738,7 +3772,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: -2.1974478, y: 0, z: -10.7129545, w: 0}
+  m_margin: {x: -2.1974478, y: 0, z: -13.611537, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -3803,6 +3837,7 @@ MonoBehaviour:
   useTimer: 0
   timerDuration: 0
   interactable: 1
+  numUses: 1
   disableOnClick: 1
   disableFadeDuration: 0
   enableFadeAlpha: 1
