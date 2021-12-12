@@ -102,8 +102,10 @@ public class TTextInteraction : MonoBehaviour
 
     public void FadeOutAndDisable()
     {
+        // Debug.Log("Start fade out");
         text.DOFade(0f, disableFadeDuration).OnComplete(() => 
         {
+            // Debug.Log("End fade out");
             gameObject.SetActive(false);
         });   
     }
@@ -112,6 +114,7 @@ public class TTextInteraction : MonoBehaviour
     {
         if (linkedObjects != null && linkedObjects.Count > linkIndex && linkedObjects[linkIndex] != null)
         {
+            // Debug.Log("Enabled " + linkedObjects[linkIndex].name);
             linkedObjects[linkIndex].SetActive(true);
         }
         
@@ -123,7 +126,7 @@ public class TTextInteraction : MonoBehaviour
 
     public void LinkToText(string linkId, string linkText, int linkIndex)
     {
-        Debug.Log("link");
+        // Debug.Log("link");
         if (!interactable) return;
         // Debug.Log("Called link text");
 

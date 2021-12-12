@@ -224,7 +224,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1347645649924280510, guid: 9a4eab165985fc946b0660bfc9e5cea6, type: 3}
       propertyPath: m_text
-      value: How strange it was.
+      value: <link>How strange it was.</link>
       objectReference: {fileID: 0}
     - target: {fileID: 1347645649924280510, guid: 9a4eab165985fc946b0660bfc9e5cea6, type: 3}
       propertyPath: m_fontSize
@@ -303,6 +303,38 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 915281067}
     m_Modifications:
+    - target: {fileID: 207006421633658640, guid: 9a4eab165985fc946b0660bfc9e5cea6, type: 3}
+      propertyPath: m_OnLinkClick.m_PersistentCalls.m_Calls.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 207006421633658640, guid: 9a4eab165985fc946b0660bfc9e5cea6, type: 3}
+      propertyPath: m_OnLinkClick.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 207006421633658640, guid: 9a4eab165985fc946b0660bfc9e5cea6, type: 3}
+      propertyPath: m_OnLinkClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 1341258674}
+    - target: {fileID: 207006421633658640, guid: 9a4eab165985fc946b0660bfc9e5cea6, type: 3}
+      propertyPath: m_OnLinkClick.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 207006421633658640, guid: 9a4eab165985fc946b0660bfc9e5cea6, type: 3}
+      propertyPath: m_OnLinkClick.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: ChangeFOV
+      objectReference: {fileID: 0}
+    - target: {fileID: 207006421633658640, guid: 9a4eab165985fc946b0660bfc9e5cea6, type: 3}
+      propertyPath: m_OnLinkClick.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
+      value: TPlayerController, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 207006421633658640, guid: 9a4eab165985fc946b0660bfc9e5cea6, type: 3}
+      propertyPath: m_OnLinkClick.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_FloatArgument
+      value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 207006421633658640, guid: 9a4eab165985fc946b0660bfc9e5cea6, type: 3}
+      propertyPath: m_OnLinkClick.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 1347645649924280504, guid: 9a4eab165985fc946b0660bfc9e5cea6, type: 3}
       propertyPath: m_Name
       value: ADream
@@ -397,7 +429,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1347645649924280510, guid: 9a4eab165985fc946b0660bfc9e5cea6, type: 3}
       propertyPath: m_text
-      value: A dream...
+      value: <link>A dream...</link>
       objectReference: {fileID: 0}
     - target: {fileID: 1347645649924280510, guid: 9a4eab165985fc946b0660bfc9e5cea6, type: 3}
       propertyPath: m_fontSize
@@ -2032,6 +2064,7 @@ MonoBehaviour:
   turnTexts: []
   defaultMoveEase: 0
   defaultRotateEase: 0
+  fovChangeDuration: 1
 --- !u!224 &1424531465 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 1347645649924280508, guid: 9a4eab165985fc946b0660bfc9e5cea6, type: 3}
@@ -2286,7 +2319,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1347645649924280511, guid: 9a4eab165985fc946b0660bfc9e5cea6, type: 3}
       propertyPath: interactable
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1347645649924280511, guid: 9a4eab165985fc946b0660bfc9e5cea6, type: 3}
       propertyPath: timerDuration
