@@ -70,10 +70,10 @@ public class TTextInteraction : MonoBehaviour
                 }
             });
         }
-        else if (useTimer)
+        else
         {
             text.alpha = 1f;
-            StartCoroutine(TimerCountdown());
+            if (useTimer) StartCoroutine(TimerCountdown());
         }
     }
 
