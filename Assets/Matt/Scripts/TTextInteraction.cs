@@ -39,6 +39,8 @@ public class TTextInteraction : MonoBehaviour
 
     public bool interactable = true;
 
+    public int numUses = 1;
+
     public bool disableOnClick = true;
     public float disableFadeDuration = 0f;
 
@@ -128,6 +130,10 @@ public class TTextInteraction : MonoBehaviour
     {
         // Debug.Log("link");
         if (!interactable) return;
+
+        if (numUses <= 0) return;
+
+        numUses--;
         // Debug.Log("Called link text");
 
         MovePlayer();

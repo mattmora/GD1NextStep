@@ -8,16 +8,20 @@ using System;
 public class TTextColor : MonoBehaviour
 {
     TMP_Text text;
+    TTextInteraction interaction;
+
+    Color vertexColor;
+    public Color usedVertexColor = Color.gray;
 
     public List<Color> textColors = new List<Color>();
+    public List<Color> usedColors = new List<Color>();
     List<Color> hoverColors = new List<Color>();
 
-    bool mouseIsOver;
-
-    // Start is called before the first frame update
-    void Start()
+    void Awake()
     {
         text = GetComponent<TMP_Text>();
+        interaction = GetComponent<TTextInteraction>();
+        vertexColor = text.color;
     }
 
     // Update is called once per frame
@@ -27,30 +31,33 @@ public class TTextColor : MonoBehaviour
         while (textColors.Count < s.Length - 1)
         {
             textColors.Add(Color.black);
+            usedColors.Add(Color.black);
             //hoverColors.Add(Color.black);
+        }
+
+        if (interaction.numUses > 0)
+        {
+            text.color = vertexColor;
+        }
+        else 
+        {
+            text.color = usedVertexColor;
         }
 
         string newText = s[0];
         for (int i = 1; i < s.Length; ++i)
         {
-            if (!mouseIsOver)
+            if (interaction.numUses > 0)
             {
                 newText += "<color=#" + ColorUtility.ToHtmlStringRGBA(textColors[i - 1]) + ">";
             }
             else 
             {
-                newText += "<color=#" + ColorUtility.ToHtmlStringRGBA(hoverColors[i - 1]) + ">";
+                newText += "<color=#" + ColorUtility.ToHtmlStringRGBA(usedColors[i - 1]) + ">";
             }
             newText += s[i].Split(new char[] { '>' }, 2, StringSplitOptions.None)[1];
         }
 
         text.text = newText;
-
-        mouseIsOver = false;
-    }
-
-    private void OnMouseOver()
-    {
-        //mouseIsOver = true ;
     }
 }
