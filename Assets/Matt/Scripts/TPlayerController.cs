@@ -14,6 +14,10 @@ public class TPlayerController : MonoBehaviour
     public Ease defaultMoveEase;
     public Ease defaultRotateEase;
 
+    Camera mainCamera;
+
+    public float fovChangeDuration = 1f;
+
     string stepWord
     {
         get { return stepWord; }
@@ -40,6 +44,11 @@ public class TPlayerController : MonoBehaviour
         }
     }
 
+    private void Awake() 
+    {
+        mainCamera = Camera.main;
+    }
+
     void Start()
     {
         
@@ -61,5 +70,15 @@ public class TPlayerController : MonoBehaviour
     {
         if (ease == Ease.Unset) ease = defaultRotateEase;
         transform.DORotate(dest, duration).SetEase(ease);
+    }
+
+    public void SetFOVChangeDuration(float dur)
+    {
+        fovChangeDuration = dur;
+    }
+
+    public void ChangeFOV(float fov)
+    {
+        mainCamera.DOFieldOfView(fov, fovChangeDuration);
     }
 }
