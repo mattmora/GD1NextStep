@@ -45,17 +45,30 @@ public class TTextInteraction : MonoBehaviour
     public float enableFadeAlpha = 1f;
     public float enableFadeDuration = 0f;
 
-    // Start is called before the first frame update
-    void Start()
+    private void Awake() 
     {
         player = GameObject.FindGameObjectWithTag("Player").GetComponent<TPlayerController>();
         text = GetComponent<TMP_Text>();
         boxCollider = GetComponent<BoxCollider>();
+    }
 
-        if (useTimer)
+    private void OnEnable() 
+    {
+        if (enableFadeAlpha == text.alpha && enableFadeDuration == 0) return;
+        text.alpha = 0f;
+        text.DOFade(enableFadeAlpha, enableFadeDuration).OnComplete(() =>
         {
-            StartCoroutine(TimerCountdown());
-        }
+            if (useTimer)
+            {
+                StartCoroutine(TimerCountdown());
+            }
+        });
+    }
+
+    // Start is called before the first frame update
+    void Start()
+    {
+        
     }
 
     // Update is called once per frame
@@ -76,84 +89,9 @@ public class TTextInteraction : MonoBehaviour
         
     }
 
-    // When the mouse is pressed on the collider
-    // private void OnMouseDown()
-    // {
-    //     Debug.Log("Mouse Down on " + text.text);
-    //     foreach (var e in onMouseDown)
-    //     {
-    //         e.Invoke();
-    //     }
-    // }
-
-    // // When the mouse is released over the collider after a press (a complete "click")
-    // private void OnMouseUpAsButton()
-    // {
-    //     foreach (var e in onMouseUp)
-    //     {
-    //         e.Invoke();
-    //     }
-    //     // MovePlayer();
-    // }
-
-    // // When the mouse enters the collider
-    // private void OnMouseEnter()
-    // {
-    //     foreach (var e in onMouseEnter)
-    //     {
-    //         e.Invoke();
-    //     }
-    // }
-
-    // // When the mouse exits the collider
-    // private void OnMouseExit()
-    // {
-    //     foreach (var e in onMouseExit)
-    //     {
-    //         e.Invoke();
-    //     }
-    // }
-
-    // // Every frame the mouse is over the collider
-    // private void OnMouseOver()
-    // {
-    //     foreach (var e in onMouseOver)
-    //     {
-    //         e.Invoke();
-    //     }
-    // }
-
     public void SetTextColor(Color color)
     {
         text.color = color;
-    }
-
-    public void LinkToText(string linkId, string linkText, int linkIndex)
-    {
-        Debug.Log("link");
-        if (!interactable) return;
-        // Debug.Log("Called link text");
-
-        if (linkedObjects != null && linkedObjects.Count > linkIndex && linkedObjects[linkIndex] != null)
-        {
-            linkedObjects[linkIndex].SetActive(true);
-            if (linkedObjects[linkIndex].GetComponent<TTextInteraction>() != null)
-            {
-                linkedObjects[linkIndex].GetComponent<TTextInteraction>().FadeIn();
-            }
-        }
-        
-        MovePlayer();
-        if (disableOnClick) 
-        {
-            FadeOutAndDisable();
-        }
-    }
-
-    public void FadeIn()
-    {
-        // text.DOFade(0f, 0f);
-        // text.DOFade(enableFadeAlpha, enableFadeDuration);
     }
 
     public void FadeOutAndDisable()
@@ -164,10 +102,28 @@ public class TTextInteraction : MonoBehaviour
         });   
     }
 
-    public void GoToText(int linkedObjectIndex)
+    public void GoToText(int linkIndex)
     {
-        linkedObjects[linkedObjectIndex].SetActive(true);
-        gameObject.SetActive(false);
+        if (linkedObjects != null && linkedObjects.Count > linkIndex && linkedObjects[linkIndex] != null)
+        {
+            linkedObjects[linkIndex].SetActive(true);
+        }
+        
+        if (disableOnClick) 
+        {
+            FadeOutAndDisable();
+        }
+    }
+
+    public void LinkToText(string linkId, string linkText, int linkIndex)
+    {
+        Debug.Log("link");
+        if (!interactable) return;
+        // Debug.Log("Called link text");
+
+        MovePlayer();
+
+        GoToText(linkIndex);
     }
 
     public void DisableInteraction()
