@@ -4323,16 +4323,14 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1347645649924280510, guid: 9a4eab165985fc946b0660bfc9e5cea6, type: 3}
       propertyPath: m_text
-      value: '<link= "0">Welcome to the beginning of the end.
+      value: '<link= "0"><color=#000000FF>Welcome to the beginning of the end.
 
         Congratulations.
 
         You
         have unlocked The End.
 
-        Continue to proceed to your sentence.
-
-        </link>'
+        Continue to proceed to your sentence.</color></link>'
       objectReference: {fileID: 0}
     - target: {fileID: 1347645649924280510, guid: 9a4eab165985fc946b0660bfc9e5cea6, type: 3}
       propertyPath: m_fontSize
@@ -4362,6 +4360,26 @@ PrefabInstance:
       propertyPath: linkedObjects.Array.data[0]
       value: 
       objectReference: {fileID: 1670068237}
+    - target: {fileID: 7254794116704496867, guid: 9a4eab165985fc946b0660bfc9e5cea6, type: 3}
+      propertyPath: textColors.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7254794116704496867, guid: 9a4eab165985fc946b0660bfc9e5cea6, type: 3}
+      propertyPath: textColors.Array.data[0].a
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7254794116704496867, guid: 9a4eab165985fc946b0660bfc9e5cea6, type: 3}
+      propertyPath: textColors.Array.data[0].b
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7254794116704496867, guid: 9a4eab165985fc946b0660bfc9e5cea6, type: 3}
+      propertyPath: textColors.Array.data[0].g
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7254794116704496867, guid: 9a4eab165985fc946b0660bfc9e5cea6, type: 3}
+      propertyPath: textColors.Array.data[0].r
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9a4eab165985fc946b0660bfc9e5cea6, type: 3}
 --- !u!1 &1170336089
