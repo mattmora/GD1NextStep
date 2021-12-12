@@ -123,7 +123,7 @@ public class TTextInteraction : MonoBehaviour
             linkedObjects[linkIndex].SetActive(true);
         }
 
-        if (numUses <= 0)
+        if (numUses == 0)
         {
             textColor.SetUsed(true);
         }
@@ -139,7 +139,7 @@ public class TTextInteraction : MonoBehaviour
         // Debug.Log("link");
         if (!interactable) return;
 
-        if (numUses <= 0) return;
+        if (numUses == 0) return;
 
         numUses--;
 
