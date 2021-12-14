@@ -59,25 +59,29 @@ public class TTextColor : MonoBehaviour
         while (textColors.Count < s.Length - 1)
         {
             textColors.Add(Color.black);
-            usedColors.Add(Color.black);
             //hoverColors.Add(Color.black);
         }
+        while (usedColors.Count < s.Length - 1)
+        {
+            usedColors.Add(Color.black);
+        }
 
-        if (s.Length == 0) return;
+        if (s.Length <= 1) return;
 
         string newText = s[0];
         for (int i = 1; i < s.Length; ++i)
         {
             if (!used)
             {
-                Debug.Log(textColors[i - 1]);
+                // Debug.Log(textColors[i - 1]);
                 newText += "<color=#" + ColorUtility.ToHtmlStringRGBA(textColors[i - 1]) + ">";
             }
             else 
             {
                 newText += "<color=#" + ColorUtility.ToHtmlStringRGBA(usedColors[i - 1]) + ">";
             }
-            newText += s[i].Split(new char[] { '>' }, 2, StringSplitOptions.None)[1];
+            string[] post = s[i].Split(new char[] { '>' }, 2, StringSplitOptions.None);
+            if (post.Length > 1) newText += post[1];
         }
 
         text.text = newText;

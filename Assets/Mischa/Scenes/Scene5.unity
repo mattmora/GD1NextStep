@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657815, g: 0.49641192, b: 0.57481617, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657838, g: 0.49641234, b: 0.57481676, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -145,7 +145,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &88773447
 RectTransform:
   m_ObjectHideFlags: 0
@@ -271,8 +271,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   usedVertexColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
-  textColors: []
-  usedColors: []
+  textColors:
+  - {r: 0, g: 0.29411766, b: 1, a: 1}
+  usedColors:
+  - {r: 0, g: 0, b: 0, a: 1}
 --- !u!114 &88773452
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -293,7 +295,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: <link>Bruno</link>...
+  m_text: <link><color=#004BFFFF>Bruno</color></link>...
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 69cac2c762100431386dd37a55174a7f, type: 2}
   m_sharedMaterial: {fileID: -9206762542071339050, guid: 69cac2c762100431386dd37a55174a7f, type: 2}
@@ -413,8 +415,8 @@ MonoBehaviour:
   targetView: {fileID: 1705231550}
   positionAdjustment: {x: 0, y: 0, z: 0}
   rotationAdjustment: {x: 0, y: 0, z: 0}
-  moveDuration: 1
-  rotateDuration: 1
+  moveDuration: 2
+  rotateDuration: 2
   textMoveDuration: 1
   onTimerEnd: []
   linkedObjects:
@@ -424,9 +426,10 @@ MonoBehaviour:
   interactable: 1
   numUses: 1
   disableOnClick: 1
-  disableFadeDuration: 0
+  disableFadeDuration: 0.5
   enableFadeAlpha: 1
-  enableFadeDuration: 0
+  enableFadeDuration: 0.5
+  enableDelay: 0
 --- !u!1 &187355493
 GameObject:
   m_ObjectHideFlags: 0
@@ -606,8 +609,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   usedVertexColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
   textColors:
+  - {r: 0, g: 0.29411766, b: 1, a: 1}
+  usedColors:
   - {r: 0, g: 0, b: 0, a: 1}
-  usedColors: []
 --- !u!114 &283794721
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -628,7 +632,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: <link>Bruno...</link>
+  m_text: <link><color=#004BFFFF>Bruno</color></link>,
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 69cac2c762100431386dd37a55174a7f, type: 2}
   m_sharedMaterial: {fileID: -9206762542071339050, guid: 69cac2c762100431386dd37a55174a7f, type: 2}
@@ -748,8 +752,8 @@ MonoBehaviour:
   targetView: {fileID: 758958304}
   positionAdjustment: {x: 0, y: 0, z: 0}
   rotationAdjustment: {x: 0, y: 0, z: 0}
-  moveDuration: 1
-  rotateDuration: 1
+  moveDuration: 2
+  rotateDuration: 2
   textMoveDuration: 1
   onTimerEnd: []
   linkedObjects:
@@ -759,9 +763,10 @@ MonoBehaviour:
   interactable: 1
   numUses: 1
   disableOnClick: 1
-  disableFadeDuration: 0
+  disableFadeDuration: 0.5
   enableFadeAlpha: 1
-  enableFadeDuration: 0
+  enableFadeDuration: 0.5
+  enableDelay: 0
 --- !u!1 &350188205
 GameObject:
   m_ObjectHideFlags: 0
@@ -814,7 +819,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &468460436
 RectTransform:
   m_ObjectHideFlags: 0
@@ -940,8 +945,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   usedVertexColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
-  textColors: []
-  usedColors: []
+  textColors:
+  - {r: 0, g: 0.29411766, b: 1, a: 1}
+  usedColors:
+  - {r: 0, g: 0, b: 0, a: 1}
 --- !u!114 &468460441
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -962,7 +969,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: after all <link>these years</link>...
+  m_text: after all <link><color=#004BFFFF>these years</color></link>...
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 69cac2c762100431386dd37a55174a7f, type: 2}
   m_sharedMaterial: {fileID: -9206762542071339050, guid: 69cac2c762100431386dd37a55174a7f, type: 2}
@@ -1082,8 +1089,8 @@ MonoBehaviour:
   targetView: {fileID: 1502797865}
   positionAdjustment: {x: 0, y: 0, z: 0}
   rotationAdjustment: {x: 0, y: 0, z: 0}
-  moveDuration: 1
-  rotateDuration: 1
+  moveDuration: 2
+  rotateDuration: 2
   textMoveDuration: 1
   onTimerEnd: []
   linkedObjects:
@@ -1093,9 +1100,10 @@ MonoBehaviour:
   interactable: 1
   numUses: 1
   disableOnClick: 1
-  disableFadeDuration: 0
+  disableFadeDuration: 0.5
   enableFadeAlpha: 1
-  enableFadeDuration: 0
+  enableFadeDuration: 0.5
+  enableDelay: 0
 --- !u!1 &538973935
 GameObject:
   m_ObjectHideFlags: 0
@@ -1118,7 +1126,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &538973936
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1245,7 +1253,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   usedVertexColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
   textColors:
-  - {r: 0, g: 0, b: 0, a: 1}
+  - {r: 0, g: 0.29411766, b: 1, a: 1}
   usedColors:
   - {r: 0, g: 0, b: 0, a: 1}
 --- !u!114 &538973941
@@ -1268,7 +1276,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: will <color="yellow"><link>you</link></color> want to see me again?
+  m_text: will <color=#004BFFFF><link>you</link></color> want to see me again?
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 69cac2c762100431386dd37a55174a7f, type: 2}
   m_sharedMaterial: {fileID: -9206762542071339050, guid: 69cac2c762100431386dd37a55174a7f, type: 2}
@@ -1388,8 +1396,8 @@ MonoBehaviour:
   targetView: {fileID: 949979538}
   positionAdjustment: {x: 0, y: 0, z: 0}
   rotationAdjustment: {x: 0, y: 0, z: 0}
-  moveDuration: 1
-  rotateDuration: 1
+  moveDuration: 2
+  rotateDuration: 2
   textMoveDuration: 1
   onTimerEnd: []
   linkedObjects:
@@ -1399,9 +1407,10 @@ MonoBehaviour:
   interactable: 1
   numUses: 1
   disableOnClick: 1
-  disableFadeDuration: 0
+  disableFadeDuration: 0.5
   enableFadeAlpha: 1
-  enableFadeDuration: 0
+  enableFadeDuration: 0.5
+  enableDelay: 0
 --- !u!1 &585904208
 GameObject:
   m_ObjectHideFlags: 0
@@ -1424,7 +1433,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &585904209
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1550,8 +1559,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   usedVertexColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
-  textColors: []
-  usedColors: []
+  textColors:
+  - {r: 0, g: 0.29411766, b: 1, a: 1}
+  usedColors:
+  - {r: 0, g: 0, b: 0, a: 1}
 --- !u!114 &585904214
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1572,7 +1583,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: for my <link>absence</link>...
+  m_text: for my <link><color=#004BFFFF>absence</color></link>...
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 69cac2c762100431386dd37a55174a7f, type: 2}
   m_sharedMaterial: {fileID: -9206762542071339050, guid: 69cac2c762100431386dd37a55174a7f, type: 2}
@@ -1692,8 +1703,8 @@ MonoBehaviour:
   targetView: {fileID: 1105602989}
   positionAdjustment: {x: 0, y: 0, z: 0}
   rotationAdjustment: {x: 0, y: 0, z: 0}
-  moveDuration: 1
-  rotateDuration: 1
+  moveDuration: 2
+  rotateDuration: 2
   textMoveDuration: 1
   onTimerEnd: []
   linkedObjects:
@@ -1703,9 +1714,10 @@ MonoBehaviour:
   interactable: 1
   numUses: 1
   disableOnClick: 1
-  disableFadeDuration: 0
+  disableFadeDuration: 0.5
   enableFadeAlpha: 1
-  enableFadeDuration: 0
+  enableFadeDuration: 0.5
+  enableDelay: 0
 --- !u!1 &654751064
 GameObject:
   m_ObjectHideFlags: 0
@@ -1728,7 +1740,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &654751065
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1855,8 +1867,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   usedVertexColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
   textColors:
+  - {r: 0, g: 0.29411766, b: 1, a: 1}
+  usedColors:
   - {r: 0, g: 0, b: 0, a: 1}
-  usedColors: []
 --- !u!114 &654751070
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1877,7 +1890,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "<link>I know you'll turn into a fine young man \n<color=\"blue\">one day.</link></color>"
+  m_text: "<link>I know you'll turn into a fine young man \n<color=#004BFFFF>one
+    day.</link></color>"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 69cac2c762100431386dd37a55174a7f, type: 2}
   m_sharedMaterial: {fileID: -9206762542071339050, guid: 69cac2c762100431386dd37a55174a7f, type: 2}
@@ -1997,8 +2011,8 @@ MonoBehaviour:
   targetView: {fileID: 187355494}
   positionAdjustment: {x: 0, y: 0, z: 0}
   rotationAdjustment: {x: 0, y: 0, z: 0}
-  moveDuration: 1
-  rotateDuration: 1
+  moveDuration: 2
+  rotateDuration: 2
   textMoveDuration: 1
   onTimerEnd: []
   linkedObjects:
@@ -2008,9 +2022,10 @@ MonoBehaviour:
   interactable: 1
   numUses: 1
   disableOnClick: 1
-  disableFadeDuration: 0
+  disableFadeDuration: 0.5
   enableFadeAlpha: 1
-  enableFadeDuration: 0
+  enableFadeDuration: 0.5
+  enableDelay: 0
 --- !u!1 &758958303
 GameObject:
   m_ObjectHideFlags: 0
@@ -2172,7 +2187,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &966428374
 RectTransform:
   m_ObjectHideFlags: 0
@@ -2299,7 +2314,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   usedVertexColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
   textColors:
-  - {r: 0, g: 0, b: 0, a: 1}
+  - {r: 0, g: 0.29411766, b: 1, a: 1}
   usedColors:
   - {r: 0, g: 0, b: 0, a: 1}
 --- !u!114 &966428379
@@ -2322,7 +2337,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: I hope this'll <color="blue"><link>make up</link></color>...
+  m_text: I hope this'll <color=#004BFFFF><link>make up</link></color>...
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 69cac2c762100431386dd37a55174a7f, type: 2}
   m_sharedMaterial: {fileID: -9206762542071339050, guid: 69cac2c762100431386dd37a55174a7f, type: 2}
@@ -2442,8 +2457,8 @@ MonoBehaviour:
   targetView: {fileID: 350188206}
   positionAdjustment: {x: 0, y: 0, z: 0}
   rotationAdjustment: {x: 0, y: 0, z: 0}
-  moveDuration: 1
-  rotateDuration: 1
+  moveDuration: 2
+  rotateDuration: 2
   textMoveDuration: 1
   onTimerEnd: []
   linkedObjects:
@@ -2453,9 +2468,10 @@ MonoBehaviour:
   interactable: 1
   numUses: 1
   disableOnClick: 1
-  disableFadeDuration: 0
+  disableFadeDuration: 0.5
   enableFadeAlpha: 1
-  enableFadeDuration: 0
+  enableFadeDuration: 0.5
+  enableDelay: 0
 --- !u!1 &968893738
 GameObject:
   m_ObjectHideFlags: 0
@@ -2478,7 +2494,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &968893739
 RectTransform:
   m_ObjectHideFlags: 0
@@ -2605,7 +2621,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   usedVertexColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
   textColors:
-  - {r: 0, g: 0, b: 0, a: 1}
+  - {r: 0, g: 0.29411766, b: 1, a: 1}
   usedColors:
   - {r: 0, g: 0, b: 0, a: 1}
 --- !u!114 &968893744
@@ -2628,7 +2644,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "But \nI <color=\"blue\"><link>wonder</link></color>,"
+  m_text: "But \nI <color=#004BFFFF><link>wonder</link></color>,"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 69cac2c762100431386dd37a55174a7f, type: 2}
   m_sharedMaterial: {fileID: -9206762542071339050, guid: 69cac2c762100431386dd37a55174a7f, type: 2}
@@ -2748,8 +2764,8 @@ MonoBehaviour:
   targetView: {fileID: 1307270878}
   positionAdjustment: {x: 0, y: 0, z: 0}
   rotationAdjustment: {x: 0, y: 0, z: 0}
-  moveDuration: 1
-  rotateDuration: 1
+  moveDuration: 2
+  rotateDuration: 2
   textMoveDuration: 1
   onTimerEnd: []
   linkedObjects:
@@ -2759,9 +2775,10 @@ MonoBehaviour:
   interactable: 1
   numUses: 1
   disableOnClick: 1
-  disableFadeDuration: 0
+  disableFadeDuration: 0.5
   enableFadeAlpha: 1
-  enableFadeDuration: 0
+  enableFadeDuration: 0.5
+  enableDelay: 0
 --- !u!1 &1105602988
 GameObject:
   m_ObjectHideFlags: 0
@@ -2814,7 +2831,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1204563036
 RectTransform:
   m_ObjectHideFlags: 0
@@ -2941,7 +2958,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   usedVertexColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
   textColors:
-  - {r: 0, g: 0, b: 0, a: 1}
+  - {r: 0, g: 0.29411766, b: 1, a: 1}
   usedColors:
   - {r: 0, g: 0, b: 0, a: 1}
 --- !u!114 &1204563041
@@ -2964,7 +2981,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: I'm coming <color="blue"><link>home</link></color>.
+  m_text: I'm coming <color=#004BFFFF><link>home</link></color>.
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 69cac2c762100431386dd37a55174a7f, type: 2}
   m_sharedMaterial: {fileID: -9206762542071339050, guid: 69cac2c762100431386dd37a55174a7f, type: 2}
@@ -3084,8 +3101,8 @@ MonoBehaviour:
   targetView: {fileID: 0}
   positionAdjustment: {x: 0, y: 0, z: 0}
   rotationAdjustment: {x: 0, y: 0, z: 0}
-  moveDuration: 1
-  rotateDuration: 1
+  moveDuration: 2
+  rotateDuration: 2
   textMoveDuration: 1
   onTimerEnd: []
   linkedObjects: []
@@ -3094,9 +3111,10 @@ MonoBehaviour:
   interactable: 1
   numUses: 1
   disableOnClick: 1
-  disableFadeDuration: 0
+  disableFadeDuration: 0.5
   enableFadeAlpha: 1
-  enableFadeDuration: 0
+  enableFadeDuration: 0.5
+  enableDelay: 0
 --- !u!1 &1252008638
 GameObject:
   m_ObjectHideFlags: 0
@@ -3107,7 +3125,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1252008639}
   m_Layer: 0
-  m_Name: Test
+  m_Name: Texts
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3315,7 +3333,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1511520020
 RectTransform:
   m_ObjectHideFlags: 0
@@ -3442,7 +3460,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   usedVertexColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
   textColors:
-  - {r: 0, g: 0, b: 0, a: 1}
+  - {r: 0, g: 0.29411766, b: 1, a: 1}
   usedColors:
   - {r: 0, g: 0, b: 0, a: 1}
 --- !u!114 &1511520025
@@ -3465,7 +3483,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: <link>I can only hope that I'll be there to <color="blue">see you</link></color>
+  m_text: <link>I can only hope that I'll be there to <color=#004BFFFF>see you</link></color>
     grow...
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 69cac2c762100431386dd37a55174a7f, type: 2}
@@ -3586,8 +3604,8 @@ MonoBehaviour:
   targetView: {fileID: 800135916}
   positionAdjustment: {x: 0, y: 0, z: 0}
   rotationAdjustment: {x: 0, y: 0, z: 0}
-  moveDuration: 1
-  rotateDuration: 1
+  moveDuration: 2
+  rotateDuration: 2
   textMoveDuration: 1
   onTimerEnd: []
   linkedObjects:
@@ -3597,9 +3615,10 @@ MonoBehaviour:
   interactable: 1
   numUses: 1
   disableOnClick: 1
-  disableFadeDuration: 0
+  disableFadeDuration: 0.5
   enableFadeAlpha: 1
-  enableFadeDuration: 0
+  enableFadeDuration: 0.5
+  enableDelay: 0
 --- !u!1 &1669805770
 GameObject:
   m_ObjectHideFlags: 0

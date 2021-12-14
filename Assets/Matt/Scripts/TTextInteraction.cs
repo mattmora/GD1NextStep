@@ -61,7 +61,7 @@ public class TTextInteraction : MonoBehaviour
 
     private void OnEnable() 
     {
-        if (enableFadeAlpha == text.alpha && enableFadeDuration == 0f && enableDelay == 0f)
+        if (enableFadeAlpha != text.alpha || enableFadeDuration != 0f || enableDelay != 0f)
         {
             text.alpha = 0f;
             text.DOFade(enableFadeAlpha, enableFadeDuration).SetDelay(enableDelay).OnComplete(() =>
