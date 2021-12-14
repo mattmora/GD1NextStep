@@ -70,6 +70,7 @@ public class TTextColor : MonoBehaviour
         {
             if (!used)
             {
+                Debug.Log(textColors[i - 1]);
                 newText += "<color=#" + ColorUtility.ToHtmlStringRGBA(textColors[i - 1]) + ">";
             }
             else 
@@ -78,5 +79,7 @@ public class TTextColor : MonoBehaviour
             }
             newText += s[i].Split(new char[] { '>' }, 2, StringSplitOptions.None)[1];
         }
+
+        text.text = newText;
     }
 }
