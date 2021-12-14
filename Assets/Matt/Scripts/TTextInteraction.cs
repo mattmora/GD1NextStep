@@ -160,7 +160,7 @@ public class TTextInteraction : MonoBehaviour
                     // Debug.Log("Enabled " + linkedObjects[linkIndex].name);
                     linkedObjects[linkIndex].SetActive(true);
                 }
-            })
+            });
         }
         else 
         {
