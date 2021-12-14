@@ -60,10 +60,10 @@ public class TPlayerController : MonoBehaviour
         
     }
 
-    public void MoveTo(Vector3 dest, float duration, Ease ease = Ease.Unset)
+    public Tween MoveTo(Vector3 dest, float duration, Ease ease = Ease.Unset)
     {
         if (ease == Ease.Unset) ease = defaultMoveEase;
-        transform.DOMove(dest, duration).SetEase(ease);
+        return transform.DOMove(dest, duration).SetEase(ease);
     }
 
     public void RotateTo(Vector3 dest, float duration, Ease ease = Ease.Unset)

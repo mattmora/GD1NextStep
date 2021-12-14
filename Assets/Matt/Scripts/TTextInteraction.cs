@@ -220,7 +220,7 @@ public class TTextInteraction : MonoBehaviour
             targetRotation += targetView.eulerAngles;
         }
         // Apply new position and rotation
-        return player.MoveTo(targetPosition, moveDuration);
         player.RotateTo(targetRotation, rotateDuration);
+        return player.MoveTo(targetPosition, moveDuration);
     }
 }
