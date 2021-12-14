@@ -403,7 +403,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1347645649924280504, guid: 9a4eab165985fc946b0660bfc9e5cea6, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1347645649924280508, guid: 9a4eab165985fc946b0660bfc9e5cea6, type: 3}
       propertyPath: m_Pivot.x
@@ -546,6 +546,46 @@ PrefabInstance:
       propertyPath: linkedObjects.Array.data[0]
       value: 
       objectReference: {fileID: 614767621}
+    - target: {fileID: 7254794116704496867, guid: 9a4eab165985fc946b0660bfc9e5cea6, type: 3}
+      propertyPath: textColors.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7254794116704496867, guid: 9a4eab165985fc946b0660bfc9e5cea6, type: 3}
+      propertyPath: usedColors.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7254794116704496867, guid: 9a4eab165985fc946b0660bfc9e5cea6, type: 3}
+      propertyPath: textColors.Array.data[0].a
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7254794116704496867, guid: 9a4eab165985fc946b0660bfc9e5cea6, type: 3}
+      propertyPath: textColors.Array.data[0].b
+      value: 0.8117647
+      objectReference: {fileID: 0}
+    - target: {fileID: 7254794116704496867, guid: 9a4eab165985fc946b0660bfc9e5cea6, type: 3}
+      propertyPath: textColors.Array.data[0].g
+      value: 0.70980394
+      objectReference: {fileID: 0}
+    - target: {fileID: 7254794116704496867, guid: 9a4eab165985fc946b0660bfc9e5cea6, type: 3}
+      propertyPath: textColors.Array.data[0].r
+      value: 0.39607844
+      objectReference: {fileID: 0}
+    - target: {fileID: 7254794116704496867, guid: 9a4eab165985fc946b0660bfc9e5cea6, type: 3}
+      propertyPath: usedColors.Array.data[0].a
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7254794116704496867, guid: 9a4eab165985fc946b0660bfc9e5cea6, type: 3}
+      propertyPath: usedColors.Array.data[0].b
+      value: 0.5019608
+      objectReference: {fileID: 0}
+    - target: {fileID: 7254794116704496867, guid: 9a4eab165985fc946b0660bfc9e5cea6, type: 3}
+      propertyPath: usedColors.Array.data[0].g
+      value: 0.5019608
+      objectReference: {fileID: 0}
+    - target: {fileID: 7254794116704496867, guid: 9a4eab165985fc946b0660bfc9e5cea6, type: 3}
+      propertyPath: usedColors.Array.data[0].r
+      value: 0.5019608
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9a4eab165985fc946b0660bfc9e5cea6, type: 3}
 --- !u!1 &128812192
@@ -950,6 +990,10 @@ PrefabInstance:
     - target: {fileID: 1347645649924280510, guid: 9a4eab165985fc946b0660bfc9e5cea6, type: 3}
       propertyPath: m_text
       value: "But <color=#000000FF><link= \"0\">where</color></link>--?\r"
+      objectReference: {fileID: 0}
+    - target: {fileID: 1347645649924280510, guid: 9a4eab165985fc946b0660bfc9e5cea6, type: 3}
+      propertyPath: m_Enabled
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1347645649924280510, guid: 9a4eab165985fc946b0660bfc9e5cea6, type: 3}
       propertyPath: m_fontSize
@@ -1561,6 +1605,46 @@ PrefabInstance:
       propertyPath: linkedObjects.Array.data[0]
       value: 
       objectReference: {fileID: 187741204}
+    - target: {fileID: 7254794116704496867, guid: 9a4eab165985fc946b0660bfc9e5cea6, type: 3}
+      propertyPath: textColors.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7254794116704496867, guid: 9a4eab165985fc946b0660bfc9e5cea6, type: 3}
+      propertyPath: usedColors.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7254794116704496867, guid: 9a4eab165985fc946b0660bfc9e5cea6, type: 3}
+      propertyPath: textColors.Array.data[0].a
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7254794116704496867, guid: 9a4eab165985fc946b0660bfc9e5cea6, type: 3}
+      propertyPath: textColors.Array.data[0].b
+      value: 0.8117647
+      objectReference: {fileID: 0}
+    - target: {fileID: 7254794116704496867, guid: 9a4eab165985fc946b0660bfc9e5cea6, type: 3}
+      propertyPath: textColors.Array.data[0].g
+      value: 0.70980394
+      objectReference: {fileID: 0}
+    - target: {fileID: 7254794116704496867, guid: 9a4eab165985fc946b0660bfc9e5cea6, type: 3}
+      propertyPath: textColors.Array.data[0].r
+      value: 0.39607844
+      objectReference: {fileID: 0}
+    - target: {fileID: 7254794116704496867, guid: 9a4eab165985fc946b0660bfc9e5cea6, type: 3}
+      propertyPath: usedColors.Array.data[0].a
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7254794116704496867, guid: 9a4eab165985fc946b0660bfc9e5cea6, type: 3}
+      propertyPath: usedColors.Array.data[0].b
+      value: 0.5019608
+      objectReference: {fileID: 0}
+    - target: {fileID: 7254794116704496867, guid: 9a4eab165985fc946b0660bfc9e5cea6, type: 3}
+      propertyPath: usedColors.Array.data[0].g
+      value: 0.5019608
+      objectReference: {fileID: 0}
+    - target: {fileID: 7254794116704496867, guid: 9a4eab165985fc946b0660bfc9e5cea6, type: 3}
+      propertyPath: usedColors.Array.data[0].r
+      value: 0.5019608
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9a4eab165985fc946b0660bfc9e5cea6, type: 3}
 --- !u!1 &403702868
@@ -3506,7 +3590,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1347645649924280504, guid: 9a4eab165985fc946b0660bfc9e5cea6, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1347645649924280508, guid: 9a4eab165985fc946b0660bfc9e5cea6, type: 3}
       propertyPath: m_Pivot.x
@@ -3604,7 +3688,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1347645649924280510, guid: 9a4eab165985fc946b0660bfc9e5cea6, type: 3}
       propertyPath: m_fontSize
-      value: 5
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 1347645649924280510, guid: 9a4eab165985fc946b0660bfc9e5cea6, type: 3}
       propertyPath: m_margin.z
@@ -3612,7 +3696,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1347645649924280510, guid: 9a4eab165985fc946b0660bfc9e5cea6, type: 3}
       propertyPath: m_fontSizeBase
-      value: 5
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 1347645649924280510, guid: 9a4eab165985fc946b0660bfc9e5cea6, type: 3}
       propertyPath: m_sharedMaterial
@@ -3637,6 +3721,46 @@ PrefabInstance:
     - target: {fileID: 1347645649924280511, guid: 9a4eab165985fc946b0660bfc9e5cea6, type: 3}
       propertyPath: waitForMoveToEnableLinked
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7254794116704496867, guid: 9a4eab165985fc946b0660bfc9e5cea6, type: 3}
+      propertyPath: textColors.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7254794116704496867, guid: 9a4eab165985fc946b0660bfc9e5cea6, type: 3}
+      propertyPath: usedColors.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7254794116704496867, guid: 9a4eab165985fc946b0660bfc9e5cea6, type: 3}
+      propertyPath: textColors.Array.data[0].a
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7254794116704496867, guid: 9a4eab165985fc946b0660bfc9e5cea6, type: 3}
+      propertyPath: textColors.Array.data[0].b
+      value: 0.8117647
+      objectReference: {fileID: 0}
+    - target: {fileID: 7254794116704496867, guid: 9a4eab165985fc946b0660bfc9e5cea6, type: 3}
+      propertyPath: textColors.Array.data[0].g
+      value: 0.70980394
+      objectReference: {fileID: 0}
+    - target: {fileID: 7254794116704496867, guid: 9a4eab165985fc946b0660bfc9e5cea6, type: 3}
+      propertyPath: textColors.Array.data[0].r
+      value: 0.39607844
+      objectReference: {fileID: 0}
+    - target: {fileID: 7254794116704496867, guid: 9a4eab165985fc946b0660bfc9e5cea6, type: 3}
+      propertyPath: usedColors.Array.data[0].a
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7254794116704496867, guid: 9a4eab165985fc946b0660bfc9e5cea6, type: 3}
+      propertyPath: usedColors.Array.data[0].b
+      value: 0.5019608
+      objectReference: {fileID: 0}
+    - target: {fileID: 7254794116704496867, guid: 9a4eab165985fc946b0660bfc9e5cea6, type: 3}
+      propertyPath: usedColors.Array.data[0].g
+      value: 0.5019608
+      objectReference: {fileID: 0}
+    - target: {fileID: 7254794116704496867, guid: 9a4eab165985fc946b0660bfc9e5cea6, type: 3}
+      propertyPath: usedColors.Array.data[0].r
+      value: 0.5019608
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9a4eab165985fc946b0660bfc9e5cea6, type: 3}
@@ -3746,6 +3870,10 @@ PrefabInstance:
     - target: {fileID: 1347645649924280510, guid: 9a4eab165985fc946b0660bfc9e5cea6, type: 3}
       propertyPath: m_text
       value: Doesn't that <color=#000000FF><link= "0">mean</link></color> a thing?
+      objectReference: {fileID: 0}
+    - target: {fileID: 1347645649924280510, guid: 9a4eab165985fc946b0660bfc9e5cea6, type: 3}
+      propertyPath: m_Enabled
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1347645649924280510, guid: 9a4eab165985fc946b0660bfc9e5cea6, type: 3}
       propertyPath: m_fontSize
@@ -4049,6 +4177,10 @@ PrefabInstance:
     - target: {fileID: 1347645649924280510, guid: 9a4eab165985fc946b0660bfc9e5cea6, type: 3}
       propertyPath: m_text
       value: Oh...<link><color=#000000FF>right</color></link>.
+      objectReference: {fileID: 0}
+    - target: {fileID: 1347645649924280510, guid: 9a4eab165985fc946b0660bfc9e5cea6, type: 3}
+      propertyPath: m_Enabled
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1347645649924280510, guid: 9a4eab165985fc946b0660bfc9e5cea6, type: 3}
       propertyPath: m_fontSize
@@ -4761,6 +4893,10 @@ PrefabInstance:
       value: ...<color=#000000FF><link>.</link></color>...
       objectReference: {fileID: 0}
     - target: {fileID: 1347645649924280510, guid: 9a4eab165985fc946b0660bfc9e5cea6, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1347645649924280510, guid: 9a4eab165985fc946b0660bfc9e5cea6, type: 3}
       propertyPath: m_fontSize
       value: 5
       objectReference: {fileID: 0}
@@ -5050,6 +5186,10 @@ PrefabInstance:
     - target: {fileID: 1347645649924280510, guid: 9a4eab165985fc946b0660bfc9e5cea6, type: 3}
       propertyPath: m_text
       value: How could they <color=#000000FF><link>do</link></color> that?
+      objectReference: {fileID: 0}
+    - target: {fileID: 1347645649924280510, guid: 9a4eab165985fc946b0660bfc9e5cea6, type: 3}
+      propertyPath: m_Enabled
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1347645649924280510, guid: 9a4eab165985fc946b0660bfc9e5cea6, type: 3}
       propertyPath: m_fontSize
@@ -5956,7 +6096,13 @@ PrefabInstance:
       objectReference: {fileID: -9206762542071339050, guid: 69cac2c762100431386dd37a55174a7f, type: 2}
     - target: {fileID: 1347645649924280510, guid: 9a4eab165985fc946b0660bfc9e5cea6, type: 3}
       propertyPath: m_text
-      value: "We used to go to school\n <color=#65B5CFFF><link>together</link></color>."
+      value: 'We used to go to school
+
+        <color=#65B5CFFF><link>together</link></color>.'
+      objectReference: {fileID: 0}
+    - target: {fileID: 1347645649924280510, guid: 9a4eab165985fc946b0660bfc9e5cea6, type: 3}
+      propertyPath: m_Enabled
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1347645649924280510, guid: 9a4eab165985fc946b0660bfc9e5cea6, type: 3}
       propertyPath: m_fontSize
@@ -6682,6 +6828,10 @@ PrefabInstance:
       value: ...a <link= "0"><color=#000000FF>dream</color></link>?
       objectReference: {fileID: 0}
     - target: {fileID: 1347645649924280510, guid: 9a4eab165985fc946b0660bfc9e5cea6, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1347645649924280510, guid: 9a4eab165985fc946b0660bfc9e5cea6, type: 3}
       propertyPath: m_fontSize
       value: 5
       objectReference: {fileID: 0}
@@ -6889,7 +7039,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1347645649924280508, guid: 9a4eab165985fc946b0660bfc9e5cea6, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 3.9090385
+      value: 3.48
       objectReference: {fileID: 0}
     - target: {fileID: 1347645649924280508, guid: 9a4eab165985fc946b0660bfc9e5cea6, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -6909,7 +7059,11 @@ PrefabInstance:
       objectReference: {fileID: -9206762542071339050, guid: 69cac2c762100431386dd37a55174a7f, type: 2}
     - target: {fileID: 1347645649924280510, guid: 9a4eab165985fc946b0660bfc9e5cea6, type: 3}
       propertyPath: m_text
-      value: "We used to play <color=#000000FF><link= \"0\">together</link></color>.\r"
+      value: "We used to play\n<color=#65B5CFFF><link= \"0\">together</link></color>.\r"
+      objectReference: {fileID: 0}
+    - target: {fileID: 1347645649924280510, guid: 9a4eab165985fc946b0660bfc9e5cea6, type: 3}
+      propertyPath: m_Enabled
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1347645649924280510, guid: 9a4eab165985fc946b0660bfc9e5cea6, type: 3}
       propertyPath: m_fontSize
@@ -7450,7 +7604,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &2119561318
 Transform:
   m_ObjectHideFlags: 0
@@ -7574,6 +7728,10 @@ PrefabInstance:
     - target: {fileID: 1347645649924280510, guid: 9a4eab165985fc946b0660bfc9e5cea6, type: 3}
       propertyPath: m_text
       value: "It really <color=#000000FF><link= \"0\">happened</link></color>.\r"
+      objectReference: {fileID: 0}
+    - target: {fileID: 1347645649924280510, guid: 9a4eab165985fc946b0660bfc9e5cea6, type: 3}
+      propertyPath: m_Enabled
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1347645649924280510, guid: 9a4eab165985fc946b0660bfc9e5cea6, type: 3}
       propertyPath: m_fontSize
