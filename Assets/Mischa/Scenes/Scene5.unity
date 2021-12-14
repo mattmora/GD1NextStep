@@ -1268,7 +1268,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: will <color=yellow><link>you</link></color> want to see me again?
+  m_text: will <color="yellow"><link>you</link></color> want to see me again?
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 69cac2c762100431386dd37a55174a7f, type: 2}
   m_sharedMaterial: {fileID: -9206762542071339050, guid: 69cac2c762100431386dd37a55174a7f, type: 2}
@@ -2064,13 +2064,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 800135915}
-  m_LocalRotation: {x: 0, y: 0.9999939, z: 0, w: 0.003490679}
-  m_LocalPosition: {x: 19.1, y: -1.33, z: -31.3}
+  m_LocalRotation: {x: 0, y: 0.99990255, z: -0, w: -0.013962104}
+  m_LocalPosition: {x: 17.3, y: -1.33, z: -29.3}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 10
-  m_LocalEulerAnglesHint: {x: 0, y: 179.6, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 181.6, z: 0}
 --- !u!1 &845534882
 GameObject:
   m_ObjectHideFlags: 0
@@ -2095,14 +2095,14 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 845534882}
-  m_LocalRotation: {x: 0, y: 0.76085925, z: -0, w: -0.648917}
-  m_LocalPosition: {x: -38.34, y: -0.5, z: 12.3}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1669805773}
   m_Father: {fileID: 0}
   m_RootOrder: 2
-  m_LocalEulerAnglesHint: {x: 0, y: 260.92, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &845534884
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2143,13 +2143,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 949979537}
-  m_LocalRotation: {x: 0, y: 0.9978703, z: 0, w: 0.06522901}
-  m_LocalPosition: {x: -5.6, y: -4.8, z: -28.7}
+  m_LocalRotation: {x: 0, y: 0.9988609, z: 0, w: 0.04771673}
+  m_LocalPosition: {x: -5.2, y: -4.8, z: -28.7}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 12
-  m_LocalEulerAnglesHint: {x: 0, y: 172.52, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 174.53, z: 0}
 --- !u!1 &966428373
 GameObject:
   m_ObjectHideFlags: 0
@@ -2495,8 +2495,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 11.73, y: 3.12}
-  m_SizeDelta: {x: 2.7471, y: 1.093}
+  m_AnchoredPosition: {x: 12.2161, y: 3.227}
+  m_SizeDelta: {x: 3.7191, y: 2.0211}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!65 &968893740
 BoxCollider:
@@ -2691,7 +2691,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: -0.9932251, y: 0, z: 0, w: 0}
+  m_margin: {x: 0.0012016296, y: 0, z: 0, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -2964,7 +2964,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: I'm coming <color=blue><link>home</link></color>.
+  m_text: I'm coming <color="blue"><link>home</link></color>.
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 69cac2c762100431386dd37a55174a7f, type: 2}
   m_sharedMaterial: {fileID: -9206762542071339050, guid: 69cac2c762100431386dd37a55174a7f, type: 2}
@@ -3736,13 +3736,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1705231549}
-  m_LocalRotation: {x: 0, y: 0.76085925, z: -0, w: -0.648917}
-  m_LocalPosition: {x: -38.34, y: -0.5, z: 12.3}
+  m_LocalRotation: {x: 0, y: 0.77217954, z: -0, w: -0.6354044}
+  m_LocalPosition: {x: -37.9, y: -0.5, z: 12.3}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 16
-  m_LocalEulerAnglesHint: {x: 0, y: 260.92, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 258.9, z: 0}
 --- !u!1 &1914367365
 GameObject:
   m_ObjectHideFlags: 0
