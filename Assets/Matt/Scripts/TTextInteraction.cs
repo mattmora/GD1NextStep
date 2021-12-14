@@ -49,6 +49,8 @@ public class TTextInteraction : MonoBehaviour
     public float enableFadeAlpha = 1f;
     public float enableFadeDuration = 0f;
 
+    public float enableDelay;
+
     private void Awake() 
     {
         player = GameObject.FindGameObjectWithTag("Player").GetComponent<TPlayerController>();
@@ -59,10 +61,10 @@ public class TTextInteraction : MonoBehaviour
 
     private void OnEnable() 
     {
-        if (enableFadeAlpha == text.alpha && enableFadeDuration == 0)
+        if (enableFadeAlpha == text.alpha && enableFadeDuration == 0f && enableDelay == 0f)
         {
             text.alpha = 0f;
-            text.DOFade(enableFadeAlpha, enableFadeDuration).OnComplete(() =>
+            text.DOFade(enableFadeAlpha, enableFadeDuration).SetDelay(enableDelay).OnComplete(() =>
             {
                 if (useTimer)
                 {
@@ -70,9 +72,10 @@ public class TTextInteraction : MonoBehaviour
                 }
             });
         }
-        else if (useTimer)
+        else
         {
-            StartCoroutine(TimerCountdown());
+            text.alpha = 1f;
+            if (useTimer) StartCoroutine(TimerCountdown());
         }
     }
 
@@ -123,7 +126,7 @@ public class TTextInteraction : MonoBehaviour
             linkedObjects[linkIndex].SetActive(true);
         }
 
-        if (numUses <= 0)
+        if (numUses == 0)
         {
             textColor.SetUsed(true);
         }
@@ -139,7 +142,7 @@ public class TTextInteraction : MonoBehaviour
         // Debug.Log("link");
         if (!interactable) return;
 
-        if (numUses <= 0) return;
+        if (numUses == 0) return;
 
         numUses--;
 
