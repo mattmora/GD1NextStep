@@ -753,7 +753,7 @@ MonoBehaviour:
   textMoveDuration: 1
   onTimerEnd: []
   linkedObjects:
-  - {fileID: 0}
+  - {fileID: 654751064}
   useTimer: 0
   timerDuration: 0
   interactable: 1
