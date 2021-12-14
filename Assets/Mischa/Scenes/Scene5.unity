@@ -430,6 +430,7 @@ MonoBehaviour:
   enableFadeAlpha: 1
   enableFadeDuration: 0.5
   enableDelay: 0
+  waitForMoveToEnableLinked: 0
 --- !u!1 &187355493
 GameObject:
   m_ObjectHideFlags: 0
@@ -632,7 +633,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: <link><color=#004BFFFF>Bruno</color></link>,
+  m_text: Bruno<link><color=#004BFFFF>...</color></link>
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 69cac2c762100431386dd37a55174a7f, type: 2}
   m_sharedMaterial: {fileID: -9206762542071339050, guid: 69cac2c762100431386dd37a55174a7f, type: 2}
@@ -767,6 +768,7 @@ MonoBehaviour:
   enableFadeAlpha: 1
   enableFadeDuration: 0.5
   enableDelay: 0
+  waitForMoveToEnableLinked: 0
 --- !u!1 &350188205
 GameObject:
   m_ObjectHideFlags: 0
@@ -1104,6 +1106,7 @@ MonoBehaviour:
   enableFadeAlpha: 1
   enableFadeDuration: 0.5
   enableDelay: 0
+  waitForMoveToEnableLinked: 0
 --- !u!1 &538973935
 GameObject:
   m_ObjectHideFlags: 0
@@ -1411,6 +1414,7 @@ MonoBehaviour:
   enableFadeAlpha: 1
   enableFadeDuration: 0.5
   enableDelay: 0
+  waitForMoveToEnableLinked: 0
 --- !u!1 &585904208
 GameObject:
   m_ObjectHideFlags: 0
@@ -1718,6 +1722,7 @@ MonoBehaviour:
   enableFadeAlpha: 1
   enableFadeDuration: 0.5
   enableDelay: 0
+  waitForMoveToEnableLinked: 0
 --- !u!1 &654751064
 GameObject:
   m_ObjectHideFlags: 0
@@ -2026,6 +2031,7 @@ MonoBehaviour:
   enableFadeAlpha: 1
   enableFadeDuration: 0.5
   enableDelay: 0
+  waitForMoveToEnableLinked: 0
 --- !u!1 &758958303
 GameObject:
   m_ObjectHideFlags: 0
@@ -2472,6 +2478,7 @@ MonoBehaviour:
   enableFadeAlpha: 1
   enableFadeDuration: 0.5
   enableDelay: 0
+  waitForMoveToEnableLinked: 0
 --- !u!1 &968893738
 GameObject:
   m_ObjectHideFlags: 0
@@ -2779,6 +2786,7 @@ MonoBehaviour:
   enableFadeAlpha: 1
   enableFadeDuration: 0.5
   enableDelay: 0
+  waitForMoveToEnableLinked: 0
 --- !u!1 &1105602988
 GameObject:
   m_ObjectHideFlags: 0
@@ -3115,6 +3123,7 @@ MonoBehaviour:
   enableFadeAlpha: 1
   enableFadeDuration: 0.5
   enableDelay: 0
+  waitForMoveToEnableLinked: 0
 --- !u!1 &1252008638
 GameObject:
   m_ObjectHideFlags: 0
@@ -3619,6 +3628,7 @@ MonoBehaviour:
   enableFadeAlpha: 1
   enableFadeDuration: 0.5
   enableDelay: 0
+  waitForMoveToEnableLinked: 0
 --- !u!1 &1669805770
 GameObject:
   m_ObjectHideFlags: 0

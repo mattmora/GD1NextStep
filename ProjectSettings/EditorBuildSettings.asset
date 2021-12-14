@@ -6,6 +6,12 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Matt/Scenes/MattSampleScene.unity
-    guid: 2cda990e2423bbf4892e6590ba056729
+    path: Assets/MainScene.unity
+    guid: 323725e625d6e4b0b9f334a0d2008a74
+  - enabled: 1
+    path: Assets/Evie/Scenes/Evie_awakening.unity
+    guid: 3e274d28c83cc6044b6716b56e7ac984
+  - enabled: 1
+    path: Assets/Evie/Scenes/Evie_scene3.unity
+    guid: 235fc57072031114bba18637911e3a4c
   m_configObjects: {}
