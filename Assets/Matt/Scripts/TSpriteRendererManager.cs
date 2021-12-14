@@ -7,8 +7,8 @@ public class TSpriteRendererManager : MonoBehaviour
 {
     public List<SpriteRenderer> renderers;
 
-    float targetAlpha;
-    float fadeDuration;
+    public float targetAlpha;
+    public float fadeDuration;
 
     // Start is called before the first frame update
     void Start()
