@@ -51,6 +51,8 @@ public class TTextInteraction : MonoBehaviour
 
     public float enableDelay;
 
+    public bool waitForMoveToEnableLinked;
+
     private void Awake() 
     {
         player = GameObject.FindGameObjectWithTag("Player").GetComponent<TPlayerController>();
@@ -148,9 +150,36 @@ public class TTextInteraction : MonoBehaviour
 
         // Debug.Log("Called link text");
 
-        MovePlayer();
+        Tween move = MovePlayer();
+        if (waitForMoveToEnableLinked)
+        {
+            move.OnComplete(() =>
+            {
+                if (linkedObjects != null && linkedObjects.Count > linkIndex && linkedObjects[linkIndex] != null)
+                {
+                    // Debug.Log("Enabled " + linkedObjects[linkIndex].name);
+                    linkedObjects[linkIndex].SetActive(true);
+                }
+            })
+        }
+        else 
+        {
+            if (linkedObjects != null && linkedObjects.Count > linkIndex && linkedObjects[linkIndex] != null)
+            {
+                // Debug.Log("Enabled " + linkedObjects[linkIndex].name);
+                linkedObjects[linkIndex].SetActive(true);
+            }
+        }
 
-        GoToText(linkIndex);
+        if (numUses == 0)
+        {
+            textColor.SetUsed(true);
+        }
+        
+        if (disableOnClick) 
+        {
+            FadeOutAndDisable();
+        }
     }
 
     public void DisableInteraction()
@@ -173,7 +202,7 @@ public class TTextInteraction : MonoBehaviour
         transform.DOMove(dest.position, textMoveDuration);
     }
 
-    public void MovePlayer()
+    public Tween MovePlayer()
     {
         // Apply adjustments
         Vector3 targetPosition = player.transform.TransformDirection(positionAdjustment);
@@ -191,7 +220,7 @@ public class TTextInteraction : MonoBehaviour
             targetRotation += targetView.eulerAngles;
         }
         // Apply new position and rotation
-        player.MoveTo(targetPosition, moveDuration);
+        return player.MoveTo(targetPosition, moveDuration);
         player.RotateTo(targetRotation, rotateDuration);
     }
 }
