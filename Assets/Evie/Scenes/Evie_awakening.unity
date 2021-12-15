@@ -1873,7 +1873,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 33d5d7b8a259a49dfb2ffb3db9687bf1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sceneToLoad: 
+  sceneToLoad: Evie_scene3
 --- !u!1 &553960900
 GameObject:
   m_ObjectHideFlags: 0
