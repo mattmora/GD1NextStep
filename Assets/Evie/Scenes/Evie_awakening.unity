@@ -4890,7 +4890,7 @@ PrefabInstance:
       objectReference: {fileID: -9206762542071339050, guid: 69cac2c762100431386dd37a55174a7f, type: 2}
     - target: {fileID: 1347645649924280510, guid: 9a4eab165985fc946b0660bfc9e5cea6, type: 3}
       propertyPath: m_text
-      value: ...<color=#000000FF><link>.</link></color>...
+      value: <color=#000000FF><link>.......</link></color>
       objectReference: {fileID: 0}
     - target: {fileID: 1347645649924280510, guid: 9a4eab165985fc946b0660bfc9e5cea6, type: 3}
       propertyPath: m_Enabled

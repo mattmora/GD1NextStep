@@ -2,6 +2,7 @@ using DG.Tweening;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class TConvergence : MonoBehaviour
 {
@@ -22,6 +23,8 @@ public class TConvergence : MonoBehaviour
     List<float> distances;
 
     public bool test;
+
+    public bool sceneTransition;
 
     private void Start()
     {
@@ -48,6 +51,7 @@ public class TConvergence : MonoBehaviour
 
     public void ConvergeObjects()
     {
+        Tween move;
         for (int i = 0; i < transforms.Count; ++i)
         {
             float dur = duration;
@@ -56,8 +60,17 @@ public class TConvergence : MonoBehaviour
                 dur *= distances[i] / maxDistance;
             }
             float delay = duration - dur;
-            transforms[i].DOMove(convergence.position + positionOffset, dur).SetEase(ease).SetDelay(delay);
+            move = transforms[i].DOMove(convergence.position + positionOffset, dur).SetEase(ease).SetDelay(delay);
             transforms[i].DORotate(convergence.rotation.eulerAngles + rotationOffset, dur).SetEase(ease).SetDelay(delay);
         }
+
+        if (sceneTransition)
+        {
+            Camera.main.DOColor(Color.white, 1f).SetDelay(duration-1f).OnComplete(() =>
+        {
+            SceneManager.LoadScene("AkshaySceneHaoTweak");
+        });
+        }
+        
     }
 }
